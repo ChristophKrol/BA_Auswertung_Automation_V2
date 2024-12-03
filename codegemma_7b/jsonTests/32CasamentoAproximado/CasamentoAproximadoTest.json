@@ -1,0 +1,46 @@
+{
+    "className": "CasamentoAproximado",
+    "testMethods": [
+        {
+            "methodName": "testShiftAndAproximadoWithEmptyText",
+            "code": "@Test\nvoid testShiftAndAproximadoWithEmptyText() throws Exception {\n assertThrows(Exception.class",
+            "CasamentoAproximado.shiftAndAproximado(": 0
+        },
+        {
+            "methodName": "testShiftAndAproximadoWithEmptyPattern",
+            "code": "@Test\nvoid testShiftAndAproximadoWithEmptyPattern() throws Exception {\n assertThrows(Exception.class",
+            "CasamentoAproximado.shiftAndAproximado(": ""
+        },
+        {
+            "methodName": "testShiftAndAproximadoWithInvalidKValue",
+            "code": "@Test\nvoid testShiftAndAproximadoWithInvalidKValue() throws Exception {\n assertThrows(Exception.class",
+            "CasamentoAproximado.shiftAndAproximado(": "",
+            "b": 1
+        },
+        {
+            "methodName": "testShiftAndAproximadoWithSingleCharacterTextAndPattern",
+            "code": "@Test\nvoid testShiftAndAproximadoWithSingleCharacterTextAndPattern() throws Exception {\n CasamentoAproximado.shiftAndAproximado(\"a\"",
+            "a": 1
+        },
+        {
+            "methodName": "testShiftAndAproximadoWithMultipleCharactersTextAndPattern",
+            "code": "@Test\nvoid testShiftAndAproximadoWithMultipleCharactersTextAndPattern() throws Exception {\n CasamentoAproximado.shiftAndAproximado(\"ab\", 2, \"ab\", 2, 0);\n}"
+        },
+        {
+            "methodName": "testShiftAndAproximadoWithTextAndPatternWithDifferentLengths",
+            "code": "@Test\nvoid testShiftAndAproximadoWithTextAndPatternWithDifferentLengths() throws Exception {\n CasamentoAproximado.shiftAndAproximado(\"abc\", 3, \"ab\", 2, 0);\n}"
+        },
+        {
+            "methodName": "testShiftAndAproximadoWithTextAndPatternWithDifferentCase",
+            "code": "@Test\nvoid testShiftAndAproximadoWithTextAndPatternWithDifferentCase() throws Exception {\n CasamentoAproximado.shiftAndAproximado(\"Ab\", 2, \"aB\", 2, 0);\n}"
+        },
+        {
+            "methodName": "testShiftAndAproximadoWithTextAndPatternWithSpecialCharacters",
+            "code": "@Test\nvoid testShiftAndAproximadoWithTextAndPatternWithSpecialCharacters() throws Exception {\n CasamentoAproximado.shiftAndAproximado(\"a!b\", 3, \"a!b\", 3, 0);\n}"
+        },
+        {
+            "methodName": "testShiftAndAproximadoWithTextAndPatternWithBoundaryConditions",
+            "code": "@Test\nvoid testShiftAndAproximadoWithTextAndPatternWithBoundaryConditions() throws Exception {\n CasamentoAproximado.shiftAndAproximado(\"a\", 1, \"a\", 1, 0);\n}"
+        }
+    ]
+}

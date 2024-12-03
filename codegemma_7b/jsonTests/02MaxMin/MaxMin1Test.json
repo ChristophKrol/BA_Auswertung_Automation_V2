@@ -1,0 +1,29 @@
+{
+    "className": "MaxMin1",
+    "testMethods": [
+        {
+            "methodName": "testMaxMin1WithEmptyArray",
+            "code": "@Test\nvoid testMaxMin1WithEmptyArray() {\n assertThrows(IllegalArgumentException.class, () -> MaxMin1.maxMin1(new int[0], 0));\n}"
+        },
+        {
+            "methodName": "testMaxMin1WithOneElementArray",
+            "code": "@Test\nvoid testMaxMin1WithOneElementArray() {\n int[] input = {5};\n int[] expected = {5, 5};\n int[] actual = MaxMin1.maxMin1(input, 1);\n assertEquals(expected, actual);\n}"
+        },
+        {
+            "methodName": "testMaxMin1WithMultipleElementsArray",
+            "code": "@Test\nvoid testMaxMin1WithMultipleElementsArray() {\n int[] input = {2, 7, 1, 8, 3};\n int[] expected = {8, 1};\n int[] actual = MaxMin1.maxMin1(input, 5);\n assertEquals(expected, actual);\n}"
+        },
+        {
+            "methodName": "testMaxMin1WithBoundaryValues",
+            "code": "@Test\nvoid testMaxMin1WithBoundaryValues() {\n int[] input = {Integer.MIN_VALUE, Integer.MAX_VALUE};\n int[] expected = {Integer.MAX_VALUE, Integer.MIN_VALUE};\n int[] actual = MaxMin1.maxMin1(input, 2);\n assertEquals(expected, actual);\n}"
+        },
+        {
+            "methodName": "testMaxMin1WithNegativeValues",
+            "code": "@Test\nvoid testMaxMin1WithNegativeValues() {\n int[] input = {-5, -2, -8};\n int[] expected = {-2, -8};\n int[] actual = MaxMin1.maxMin1(input, 3);\n assertEquals(expected, actual);\n}"
+        },
+        {
+            "methodName": "testMaxMin1WithPositiveValues",
+            "code": "@Test\nvoid testMaxMin1WithPositiveValues() {\n int[] input = {5, 2, 8};\n int[] expected = {8, 2};\n int[] actual = MaxMin1.maxMin1(input, 3);\n assertEquals(expected, actual);\n}"
+        }
+    ]
+}

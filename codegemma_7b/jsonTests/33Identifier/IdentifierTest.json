@@ -1,0 +1,41 @@
+{
+    "className": "Identifier",
+    "testMethods": [
+        {
+            "methodName": "testValidateIdentifierWithNullString",
+            "code": "@Test\nvoid testValidateIdentifierWithNullString() {\n assertFalse(identifier.validateIdentifier(null));\n}"
+        },
+        {
+            "methodName": "testValidateIdentifierWithEmptyString",
+            "code": "@Test\nvoid testValidateIdentifierWithEmptyString() {\n assertFalse(identifier.validateIdentifier(\"\"));\n}"
+        },
+        {
+            "methodName": "testValidateIdentifierWithInvalidFirstCharacter",
+            "code": "@Test\nvoid testValidateIdentifierWithInvalidFirstCharacter() {\n assertFalse(identifier.validateIdentifier(\"1abc\"));\n}"
+        },
+        {
+            "methodName": "testValidateIdentifierWithValidFirstCharacter",
+            "code": "@Test\nvoid testValidateIdentifierWithValidFirstCharacter() {\n assertTrue(identifier.validateIdentifier(\"abc\"));\n}"
+        },
+        {
+            "methodName": "testValidateIdentifierWithInvalidCharacters",
+            "code": "@Test\nvoid testValidateIdentifierWithInvalidCharacters() {\n assertFalse(identifier.validateIdentifier(\"abc#\""
+        },
+        {
+            "methodName": "testValidateIdentifierWithValidCharacters",
+            "code": "@Test\nvoid testValidateIdentifierWithValidCharacters() {\n assertTrue(identifier.validateIdentifier(\"abc123\""
+        },
+        {
+            "methodName": "testValidateIdentifierWithLengthLessThan1",
+            "code": "@Test\nvoid testValidateIdentifierWithLengthLessThan1() {\n assertFalse(identifier.validateIdentifier(\"a\"));\n}"
+        },
+        {
+            "methodName": "testValidateIdentifierWithLengthEqualTo6",
+            "code": "@Test\nvoid testValidateIdentifierWithLengthEqualTo6() {\n assertFalse(identifier.validateIdentifier(\"abcdefg\"));\n}"
+        },
+        {
+            "methodName": "testValidateIdentifierWithLengthBetween1And6",
+            "code": "@Test\nvoid testValidateIdentifierWithLengthBetween1And6() {\n assertTrue(identifier.validateIdentifier(\"abcde\"));\n}"
+        }
+    ]
+}

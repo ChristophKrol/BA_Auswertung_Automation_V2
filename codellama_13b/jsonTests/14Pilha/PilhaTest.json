@@ -1,0 +1,25 @@
+{
+    "className": "Pilha",
+    "testMethods": [
+        {
+            "methodName": "testEmpilhaWithNullItem",
+            "code": "@Test\nvoid testEmpilhaWithNullItem() {\n  Pilha pilha = new Pilha();\n  assertThrows(Exception.class, () -> pilha.empilha(null));\n}"
+        },
+        {
+            "methodName": "testDesempilhaWithEmptyStack",
+            "code": "@Test\nvoid testDesempilhaWithEmptyStack() {\n  Pilha pilha = new Pilha();\n  assertThrows(Exception.class, () -> pilha.desempilha());\n}"
+        },
+        {
+            "methodName": "testEmpilhaAndDesempilha",
+            "code": "@Test\nvoid testEmpilhaAndDesempilha() {\n  Pilha pilha = new Pilha();\n  Object item1 = new Object();\n  Object item2 = new Object();\n  pilha.empilha(item1);\n  pilha.empilha(item2);\n  assertEquals(pilha.desempilha(), item2);\n  assertEquals(pilha.desempilha(), item1);\n}"
+        },
+        {
+            "methodName": "testVazia",
+            "code": "@Test\nvoid testVazia() {\n  Pilha pilha = new Pilha();\n  assertTrue(pilha.vazia());\n  Object item1 = new Object();\n  Object item2 = new Object();\n  pilha.empilha(item1);\n  pilha.empilha(item2);\n  assertFalse(pilha.vazia());\n}"
+        },
+        {
+            "methodName": "testTamanho",
+            "code": "@Test\nvoid testTamanho() {\n  Pilha pilha = new Pilha();\n  Object item1 = new Object();\n  Object item2 = new Object();\n  pilha.empilha(item1);\n  pilha.empilha(item2);\n  assertEquals(pilha.tamanho(), 2);\n}"
+        }
+    ]
+}

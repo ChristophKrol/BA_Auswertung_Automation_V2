@@ -1,0 +1,17 @@
+{
+    "className": "Lista",
+    "testMethods": [
+        {
+            "methodName": "testVazia",
+            "code": "@Test \\nvoid testVazia(){\\n Lista lista = new Lista();\\n assertTrue(lista.vazia());\\n}"
+        },
+        {
+            "methodName": "testInsere",
+            "code": "@Test \\nvoid testInsere(){\\n Lista lista = new Lista();\\n Object x = new Object();\\n lista.insere(x);\\n assertFalse(lista.vazia());\\n}"
+        },
+        {
+            "methodName": "testImprime",
+            "code": "@Test \\nvoid testImprime(){\\n Lista lista = new Lista();\\n lista.insere(new Object());\\n lista.imprime();\\n}"
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    "className": "Ordenacao",
+    "testMethods": [
+        {
+            "methodName": "testOrdenaWithEmptyArray",
+            "code": "@Test\nvoid testOrdenaWithEmptyArray() {\n assertTrue(true);\n}"
+        },
+        {
+            "methodName": "testOrdenaWithOneElementArray",
+            "code": "@Test\nvoid testOrdenaWithOneElementArray() {\n int[] v = {1};\n Ordenacao.ordena(v, 1);\n assertEquals(1, v[0]);\n}"
+        },
+        {
+            "methodName": "testOrdenaWithMultipleElementsArray",
+            "code": "@Test\nvoid testOrdenaWithMultipleElementsArray() {\n int[] v = {3, 2, 1};\n Ordenacao.ordena(v, 3);\n assertEquals(1, v[0]);\n assertEquals(2, v[1]);\n assertEquals(3, v[2]);\n}"
+        },
+        {
+            "methodName": "testOrdenaWithNegativeValues",
+            "code": "@Test\nvoid testOrdenaWithNegativeValues() {\n int[] v = {-3, -2, -1};\n Ordenacao.ordena(v, 3);\n assertEquals(-3, v[0]);\n assertEquals(-2, v[1]);\n assertEquals(-1, v[2]);\n}"
+        },
+        {
+            "methodName": "testOrdenaWithBoundaryValues",
+            "code": "@Test\nvoid testOrdenaWithBoundaryValues() {\n int[] v = {Integer.MIN_VALUE, 0, Integer.MAX_VALUE};\n Ordenacao.ordena(v, 3);\n assertEquals(Integer.MIN_VALUE, v[0]);\n assertEquals(0, v[1]);\n assertEquals(Integer.MAX_VALUE, v[2]);\n}"
+        },
+        {
+            "methodName": "testOrdenaWithNullPointerException",
+            "code": "@Test\nvoid testOrdenaWithNullPointerException() {\n int[] v = null;\n try {\n Ordenacao.ordena(v, 0);\n fail(\"Expected NullPointerException\");\n } catch (NullPointerException e) {\n // Expected\n }\n}"
+        }
+    ]
+}

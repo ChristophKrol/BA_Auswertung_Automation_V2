@@ -1,0 +1,17 @@
+{
+    "className": "Lista",
+    "testMethods": [
+        {
+            "methodName": "testCriaListaVazia",
+            "code": "@Test\nvoid testCriaListaVazia() {\n    Lista lista = new Lista();\n    assertTrue(lista.vazia());\n}"
+        },
+        {
+            "methodName": "testInsereElemento",
+            "code": "@Test\nvoid testInsereElemento() {\n    Lista lista = new Lista();\n    lista.insere(10);\n    assertFalse(lista.vazia());\n}"
+        },
+        {
+            "methodName": "testImprimeLista",
+            "code": "@Test\nvoid testImprimeLista() {\n    Lista lista = new Lista();\n    lista.insere(10);\n    lista.insere(20);\n    String output = \"10\n20\";\n    ByteArrayOutputStream baos = new ByteArrayOutputStream();\n    PrintStream ps = new PrintStream(baos);\n    System.setOut(ps);\n    lista.imprime();\n    assertEquals(output, baos.toString());\n}"
+        }
+    ]
+}

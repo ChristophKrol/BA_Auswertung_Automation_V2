@@ -1,0 +1,21 @@
+{
+    "className": "Fila",
+    "testMethods": [
+        {
+            "methodName": "testEnfileiraWithNullItem",
+            "code": "@Test\nvoid testEnfileiraWithNullItem() {\n  Fila fila = new Fila();\n  assertThrows(Exception.class, () -> fila.enfileira(null));\n}"
+        },
+        {
+            "methodName": "testDesenfileiraFromEmptyQueue",
+            "code": "@Test\nvoid testDesenfileiraFromEmptyQueue() {\n  Fila fila = new Fila();\n  assertThrows(Exception.class, () -> fila.desenfileira());\n}"
+        },
+        {
+            "methodName": "testEnqueueAndDequeue",
+            "code": "@Test\nvoid testEnqueueAndDequeue() {\n  Fila fila = new Fila();\n  fila.enfileira(1);\n  assertEquals(1, fila.desenfileira());\n}"
+        },
+        {
+            "methodName": "testVazia",
+            "code": "@Test\nvoid testVazia() {\n  Fila fila = new Fila();\n  assertTrue(fila.vazia());\n}"
+        }
+    ]
+}

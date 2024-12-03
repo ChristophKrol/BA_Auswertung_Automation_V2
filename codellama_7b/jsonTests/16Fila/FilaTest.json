@@ -1,0 +1,29 @@
+{
+    "className": "Fila",
+    "testMethods": [
+        {
+            "methodName": "testVazia",
+            "code": "@Test \\nvoid testVazia(){\\n Fila fila = new Fila ();\\n assertTrue(fila.vazia());\\n}"
+        },
+        {
+            "methodName": "testEnfileira",
+            "code": "@Test \\nvoid testEnfileira(){\\n Fila fila = new Fila ();\\n Object item = new Object();\\n fila.enfileira(item);\\n assertFalse(fila.vazia());\\n}"
+        },
+        {
+            "methodName": "testDesenfileira",
+            "code": "@Test \\nvoid testDesenfileira(){\\n Fila fila = new Fila ();\\n Object item = new Object();\\n fila.enfileira(item);\\n assertEquals(item, fila.desenfileira());\\n}"
+        },
+        {
+            "methodName": "testImprime",
+            "code": "@Test \\nvoid testImprime(){\\n Fila fila = new Fila ();\\n Object item1 = new Object();\\n Object item2 = new Object();\\n fila.enfileira(item1);\\n fila.enfileira(item2);\\n assertEquals(\" \" + item1.toString () + \" \" + item2.toString (), fila.imprime());\\n}"
+        },
+        {
+            "methodName": "testEnfileiraVazia",
+            "code": "@Test \\nvoid testEnfileiraVazia(){\\n Fila fila = new Fila ();\\n Object item = new Object();\\n assertThrows(Exception.class, () -> {fila.enfileira(item);});\\n}"
+        },
+        {
+            "methodName": "testDesenfileiraVazia",
+            "code": "@Test \\nvoid testDesenfileiraVazia(){\\n Fila fila = new Fila ();\\n assertThrows(Exception.class, () -> {fila.desenfileira();});\\n}"
+        }
+    ]
+}

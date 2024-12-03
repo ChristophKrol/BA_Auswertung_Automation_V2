@@ -1,0 +1,17 @@
+{
+    "className": "Fila",
+    "testMethods": [
+        {
+            "methodName": "testEnfileiraWithFullQueue",
+            "code": "@Test \\nvoid testEnfileiraWithFullQueue() throws Exception {\\n Fila fila = new Fila();\\n for (int i=0; i<999; i++) { fila.enfileira(new Object()); }\\n assertThrows(Exception.class, () -> fila.enfileira(new Object()));\n}"
+        },
+        {
+            "methodName": "testDesenfileiraWithEmptyQueue",
+            "code": "@Test \\nvoid testDesenfileiraWithEmptyQueue() throws Exception {\\n Fila fila = new Fila();\\n assertThrows(Exception.class, () -> fila.desenfileira());\\n}"
+        },
+        {
+            "methodName": "testEnfileiraDesenfileiraWithNormalOperation",
+            "code": "@Test \\nvoid testEnfileiraDesenfileiraWithNormalOperation() throws Exception {\\n Fila fila = new Fila();\\n Object obj1 = new Object(), obj2 = new Object();\\n fila.enfileira(obj1);\\n fila.enfileira(obj2);\\n assertEquals(obj1, fila.desenfileira());\\n assertEquals(obj2, fila.desenfileira());\\n}"
+        }
+    ]
+}

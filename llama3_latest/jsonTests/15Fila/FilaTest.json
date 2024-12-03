@@ -1,0 +1,33 @@
+{
+    "className": "Fila",
+    "testMethods": [
+        {
+            "methodName": "testFilaEmptyArray",
+            "code": "@Test\nvoid testFilaEmptyArray(){\n    Fila fila = new Fila();\n    assertNull(fila.item);\n}\n"
+        },
+        {
+            "methodName": "testEnfileiraWithOneElement",
+            "code": "@Test\nvoid testEnfileiraWithOneElement() throws Exception {\n    Fila fila = new Fila();\n    Object item = new Object();\n    fila.enfileira(item);\n    assertEquals(fila.tras, 1);\n}\n"
+        },
+        {
+            "methodName": "testDesenfileiraWithEmptyFila",
+            "code": "@Test\nvoid testDesenfileiraWithEmptyFila() throws Exception {\n    Fila fila = new Fila();\n    assertNull(fila.desenfileira());\n}\n"
+        },
+        {
+            "methodName": "testEnfileiraWithFullFila",
+            "code": "@Test\nvoid testEnfileiraWithFullFila() throws Exception {\n    Fila fila = new Fila();\n    for (int i = 0; i < 1000; i++){\n        Object item = new Object();\n        fila.enfileira(item);\n    }\n    assertEquals(fila.tras, 1);\n}\n"
+        },
+        {
+            "methodName": "testDesenfileiraWithOneElement",
+            "code": "@Test\nvoid testDesenfileiraWithOneElement() throws Exception {\n    Fila fila = new Fila();\n    Object item = new Object();\n    fila.enfileira(item);\n    assertEquals(fila.desenfileira(), item);\n}\n"
+        },
+        {
+            "methodName": "testVazia",
+            "code": "@Test\nvoid testVazia() {\n    Fila fila = new Fila();\n    assertTrue(fila.vazia());\n}\n"
+        },
+        {
+            "methodName": "testImprime",
+            "code": "@Test\nvoid testImprime() {\n    Fila fila = new Fila();\n    Object item = new Object();\n    fila.enfileira(item);\n    fila.imprime();\n}\n"
+        }
+    ]
+}

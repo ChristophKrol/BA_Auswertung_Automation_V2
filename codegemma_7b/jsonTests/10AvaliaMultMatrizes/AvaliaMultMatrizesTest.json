@@ -1,0 +1,25 @@
+{
+    "className": "AvaliaMultMatrizes",
+    "testMethods": [
+        {
+            "methodName": "testMultMatrizeWithEmptyMatrix",
+            "code": "@Test\nvoid testMultMatrizeWithEmptyMatrix() throws IOException {\n    int n = 0;\n    int[] d = {};\n    AvaliaMultMatrizes.multmatrize(n, d);\n}\n"
+        },
+        {
+            "methodName": "testMultMatrizeWithOneElementMatrix",
+            "code": "@Test\nvoid testMultMatrizeWithOneElementMatrix() throws IOException {\n    int n = 1;\n    int[] d = {1};\n    AvaliaMultMatrizes.multmatrize(n, d);\n}\n"
+        },
+        {
+            "methodName": "testMultMatrizeWithMultipleElementsMatrix",
+            "code": "@Test\nvoid testMultMatrizeWithMultipleElementsMatrix() throws IOException {\n    int n = 3;\n    int[] d = {1, 2, 3};\n    AvaliaMultMatrizes.multmatrize(n, d);\n}\n"
+        },
+        {
+            "methodName": "testMultMatrizeWithNegativeDimensions",
+            "code": "@Test\nvoid testMultMatrizeWithNegativeDimensions() throws IOException {\n    int n = -1;\n    int[] d = {};\n    try {\n      AvaliaMultMatrizes.multmatrize(n, d);\n      fail(\"Expected IllegalArgumentException\");\n    } catch (IllegalArgumentException e) {\n      // Expected exception\n    }\n}\n"
+        },
+        {
+            "methodName": "testMultMatrizeWithNullDimensions",
+            "code": "@Test\nvoid testMultMatrizeWithNullDimensions() throws IOException {\n    int n = null;\n    int[] d = {};\n    try {\n      AvaliaMultMatrizes.multmatrize(n, d);\n      fail(\"Expected NullPointerException\");\n    } catch (NullPointerException e) {\n      // Expected exception\n    }\n}\n"
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    "className": "Ordenacao",
+    "testMethods": [
+        {
+            "methodName": "testMergeSortWithEmptyArray",
+            "code": "@Test \\nvoid testMergeSortWithEmptyArray(){\\n assertNull(Ordenacao.mergeSort(new int[0], 0, 0));\\n}"
+        },
+        {
+            "methodName": "testMergeSortWithOneElementArray",
+            "code": "@Test \\nvoid testMergeSortWithOneElementArray(){\\n assertEquals(1, Ordenacao.mergeSort(new int[]{1}, 0, 0));\\n}"
+        },
+        {
+            "methodName": "testMergeSortWithMultipleElementsArray",
+            "code": "@Test \\nvoid testMergeSortWithMultipleElementsArray(){\\n assertEquals(3, Ordenacao.mergeSort(new int[]{1, 2, 3}, 0, 2));\\n}"
+        },
+        {
+            "methodName": "testMergeWithEmptyArray",
+            "code": "@Test \\nvoid testMergeWithEmptyArray(){\\n assertNull(Ordenacao.merge(new int[0], 0, 0, 0));\\n}"
+        },
+        {
+            "methodName": "testMergeWithOneElementArray",
+            "code": "@Test \\nvoid testMergeWithOneElementArray(){\\n assertEquals(1, Ordenacao.merge(new int[]{1}, 0, 0, 0));\\n}"
+        },
+        {
+            "methodName": "testMergeWithMultipleElementsArray",
+            "code": "@Test \\nvoid testMergeWithMultipleElementsArray(){\\n assertEquals(3, Ordenacao.merge(new int[]{1, 2, 3}, 0, 2, 2));\\n}"
+        }
+    ]
+}

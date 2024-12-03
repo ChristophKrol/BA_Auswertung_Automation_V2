@@ -1,0 +1,21 @@
+{
+    "className": "Ordenacao",
+    "testMethods": [
+        {
+            "methodName": "testMergeSortWithEmptyArray",
+            "code": "@Test \\nvoid testMergeSortWithEmptyArray(){\\n int[] array = {}; Ordenacao.mergeSort(array, 0, 0); assertEquals(new int[]{}, array);\\n}"
+        },
+        {
+            "methodName": "testMergeSortWithOneElementArray",
+            "code": "@Test \\nvoid testMergeSortWithOneElementArray(){\\n int[] array = {1}; Ordenacao.mergeSort(array, 0, 0); assertEquals(new int[]{1}, array);\\n}"
+        },
+        {
+            "methodName": "testMergeSortWithSortedArray",
+            "code": "@Test \\nvoid testMergeSortWithSortedArray(){\\n int[] array = {1, 2, 3}; Ordenacao.mergeSort(array, 0, 2); assertEquals(new int[]{1, 2, 3}, array);\\n}"
+        },
+        {
+            "methodName": "testMergeSortWithUnsortedArray",
+            "code": "@Test \\nvoid testMergeSortWithUnsortedArray(){\\n int[] array = {3, 2, 1}; Ordenacao.mergeSort(array, 0, 2); assertEquals(new int[]{1, 2, 3}, array);\\n}"
+        }
+    ]
+}

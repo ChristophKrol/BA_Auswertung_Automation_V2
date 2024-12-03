@@ -1,0 +1,17 @@
+{
+    "className": "CasamentoAproximado",
+    "testMethods": [
+        {
+            "methodName": "testShiftAndAproximadoWithEmptyPattern",
+            "code": "@Test \\nvoid testShiftAndAproximadoWithEmptyPattern(){\\n assertNull(CasamentoAproximado.shiftAndAproximado(\"\", 0, \"\", 0, 0));\\n}"
+        },
+        {
+            "methodName": "testShiftAndAproximadoWithOneElementArray",
+            "code": "@Test \\nvoid testShiftAndAproximadoWithOneElementArray(){\\n assertEquals(item, CasamentoAproximado.shiftAndAproximado(\"\", 0, \"\", 0, 1));\\n}"
+        },
+        {
+            "methodName": "testShiftAndAproximadoWithMultipleElementsArray",
+            "code": "@Test \\nvoid testShiftAndAproximadoWithMultipleElementsArray(){\\n assertEquals(item3, CasamentoAproximado.shiftAndAproximado(\"\", 0, \"\", 0, 3));\\n}"
+        }
+    ]
+}

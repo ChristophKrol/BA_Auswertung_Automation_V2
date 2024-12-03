@@ -1,0 +1,53 @@
+{
+    "className": "CasamentoExato",
+    "testMethods": [
+        {
+            "methodName": "testForcaBrutaWithEmptyPattern",
+            "code": "@Test \\nvoid testForcaBrutaWithEmptyPattern(){\\n assertNull(CasamentoExato.forcaBruta(\"\", 0, \"\", 0));\\n}"
+        },
+        {
+            "methodName": "testForcaBrutaWithOneElementArray",
+            "code": "@Test \\nvoid testForcaBrutaWithOneElementArray(){\\n assertEquals(item, CasamentoExato.forcaBruta(\"\", 0, \"\", 1));\\n}"
+        },
+        {
+            "methodName": "testForcaBrutaWithMultipleElementsArray",
+            "code": "@Test \\nvoid testForcaBrutaWithMultipleElementsArray(){\\n assertEquals(item3, CasamentoExato.forcaBruta(\"\", 0, \"\", 3));\\n}"
+        },
+        {
+            "methodName": "testShiftAndExatoWithEmptyPattern",
+            "code": "@Test \\nvoid testShiftAndExatoWithEmptyPattern(){\\n assertNull(CasamentoExato.shiftAndExato(\"\", 0, \"\", 0));\\n}"
+        },
+        {
+            "methodName": "testShiftAndExatoWithOneElementArray",
+            "code": "@Test \\nvoid testShiftAndExatoWithOneElementArray(){\\n assertEquals(item, CasamentoExato.shiftAndExato(\"\", 0, \"\", 1));\\n}"
+        },
+        {
+            "methodName": "testShiftAndExatoWithMultipleElementsArray",
+            "code": "@Test \\nvoid testShiftAndExatoWithMultipleElementsArray(){\\n assertEquals(item3, CasamentoExato.shiftAndExato(\"\", 0, \"\", 3));\\n}"
+        },
+        {
+            "methodName": "testBmhWithEmptyPattern",
+            "code": "@Test \\nvoid testBmhWithEmptyPattern(){\\n assertNull(CasamentoExato.bmh(\"\", 0, \"\", 0));\\n}"
+        },
+        {
+            "methodName": "testBmhWithOneElementArray",
+            "code": "@Test \\nvoid testBmhWithOneElementArray(){\\n assertEquals(item, CasamentoExato.bmh(\"\", 0, \"\", 1));\\n}"
+        },
+        {
+            "methodName": "testBmhWithMultipleElementsArray",
+            "code": "@Test \\nvoid testBmhWithMultipleElementsArray(){\\n assertEquals(item3, CasamentoExato.bmh(\"\", 0, \"\", 3));\\n}"
+        },
+        {
+            "methodName": "testBmhsWithEmptyPattern",
+            "code": "@Test \\nvoid testBmhsWithEmptyPattern(){\\n assertNull(CasamentoExato.bmhs(\"\", 0, \"\", 0));\\n}"
+        },
+        {
+            "methodName": "testBmhsWithOneElementArray",
+            "code": "@Test \\nvoid testBmhsWithOneElementArray(){\\n assertEquals(item, CasamentoExato.bmhs(\"\", 0, \"\", 1));\\n}"
+        },
+        {
+            "methodName": "testBmhsWithMultipleElementsArray",
+            "code": "@Test \\nvoid testBmhsWithMultipleElementsArray(){\\n assertEquals(item3, CasamentoExato.bmhs(\"\", 0, \"\", 3));\\n}"
+        }
+    ]
+}

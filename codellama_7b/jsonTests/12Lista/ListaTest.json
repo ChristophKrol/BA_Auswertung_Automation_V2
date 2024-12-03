@@ -1,0 +1,25 @@
+{
+    "className": "Lista",
+    "testMethods": [
+        {
+            "methodName": "testVaziaInicialmente",
+            "code": "@Test \\nvoid testVaziaInicialmente(){\\n assertTrue(new Lista().vazia());\\n}"
+        },
+        {
+            "methodName": "testInsereUmElemento",
+            "code": "@Test \\nvoid testInsereUmElemento(){\\n Lista lista = new Lista(); Object item = new Object(); lista.insere(item); assertFalse(lista.vazia());\\n}"
+        },
+        {
+            "methodName": "testImprimeListaVazia",
+            "code": "@Test \\nvoid testImprimeListaVazia(){\\n Lista lista = new Lista(); lista.imprime();\\n}"
+        },
+        {
+            "methodName": "testImprimeListaComUmElemento",
+            "code": "@Test \\nvoid testImprimeListaComUmElemento(){\\n Lista lista = new Lista(); Object item = new Object(); lista.insere(item); lista.imprime();\\n}"
+        },
+        {
+            "methodName": "testImprimeListaComVariosElementos",
+            "code": "@Test \\nvoid testImprimeListaComVariosElementos(){\\n Lista lista = new Lista(); Object item1 = new Object(); Object item2 = new Object(); Object item3 = new Object(); lista.insere(item1); lista.insere(item2); lista.insere(item3); lista.imprime();\\n}"
+        }
+    ]
+}

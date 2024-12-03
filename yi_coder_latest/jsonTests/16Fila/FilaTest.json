@@ -1,0 +1,17 @@
+{
+    "className": "Fila",
+    "testMethods": [
+        {
+            "methodName": "testEnfileiraWithOneElement",
+            "code": "@Test \\nvoid testEnfileiraWithOneElement() throws Exception {\\n Fila fila = new Fila();\\n fila.enfileira(item);\\n assertFalse(fila.vazia());\\n}"
+        },
+        {
+            "methodName": "testDesenfileiraWithOneElement",
+            "code": "@Test \\nvoid testDesenfileiraWithOneElement() throws Exception {\\n Fila fila = new Fila();\\n fila.enfileira(item);\\n Object result = fila.desenfileira();\\n assertEquals(item, result);\\n assertTrue(fila.vazia());\\n}"
+        },
+        {
+            "methodName": "testDesenfileiraWithEmptyQueue",
+            "code": "@Test \\nvoid testDesenfileiraWithEmptyQueue() throws Exception {\\n Fila fila = new Fila();\\n assertThrows(Exception.class, () -> fila.desenfileira());\\n}"
+        }
+    ]
+}

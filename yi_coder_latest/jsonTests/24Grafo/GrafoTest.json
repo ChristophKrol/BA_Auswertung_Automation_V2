@@ -1,0 +1,21 @@
+{
+    "className": "Grafo",
+    "testMethods": [
+        {
+            "methodName": "testInsercaoAresta",
+            "code": "@Test \\nvoid testInsercaoAresta() { \\n  Grafo g = new Grafo(); \\n  g.insereAresta(1, 2, 3); \\n  assertTrue(g.existeAresta(1, 2)); \\n}"
+        },
+        {
+            "methodName": "testListaAdjVazia",
+            "code": "@Test \\nvoid testListaAdjVazia() { \\n  Grafo g = new Grafo(); \\n  assertTrue(g.listaAdjVazia(1)); \\n}"
+        },
+        {
+            "methodName": "testPrimeiroProxAdj",
+            "code": "@Test \\nvoid testPrimeiroProxAdj() { \\n  Grafo g = new Grafo(); \\n  g.insereAresta(1, 2, 3); \\n  Aresta a = g.primeiroListaAdj(1); \\n  assertEquals(new Aresta(1, 2, 3), a); \\n}"
+        },
+        {
+            "methodName": "testRetiraAresta",
+            "code": "@Test \\nvoid testRetiraAresta() { \\n  Grafo g = new Grafo(); \\n  g.insereAresta(1, 2, 3); \\n  assertEquals(new Aresta(1, 2, 3), g.retiraAresta(1, 2)); \\n}"
+        }
+    ]
+}

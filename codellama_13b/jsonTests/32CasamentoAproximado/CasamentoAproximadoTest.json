@@ -1,0 +1,25 @@
+{
+    "className": "CasamentoAproximado",
+    "testMethods": [
+        {
+            "methodName": "testShiftAndAproximadoWithEmptyString",
+            "code": "@Test \\nvoid testShiftAndAproximadoWithEmptyString(){\\n assertEquals(0, CasamentoAproximado.shiftAndAproximado(\"\", 0, \"\", 0, 1));\\n}"
+        },
+        {
+            "methodName": "testShiftAndAproximadoWithOneCharacterPattern",
+            "code": "@Test \\nvoid testShiftAndAproximadoWithOneCharacterPattern(){\\n assertEquals(1, CasamentoAproximado.shiftAndAproximado(\"abcd\", 4, \"a\", 1, 1));\\n}"
+        },
+        {
+            "methodName": "testShiftAndAproximadoWithMultipleCharacterPattern",
+            "code": "@Test \\nvoid testShiftAndAproximadoWithMultipleCharacterPattern(){\\n assertEquals(2, CasamentoAproximado.shiftAndAproximado(\"abcd\", 4, \"ab\", 2, 1));\\n}"
+        },
+        {
+            "methodName": "testShiftAndAproximadoWithLargePattern",
+            "code": "@Test \\nvoid testShiftAndAproximadoWithLargePattern(){\\n assertEquals(3, CasamentoAproximado.shiftAndAproximado(\"abcd\", 4, \"abcdefghijklmnopqrstuvwxyz\", 26, 1));\\n}"
+        },
+        {
+            "methodName": "testShiftAndAproximadoWithLargeText",
+            "code": "@Test \\nvoid testShiftAndAproximadoWithLargeText(){\\n assertEquals(4, CasamentoAproximado.shiftAndAproximado(\"abcdefghijklmnopqrstuvwxyz\", 26, \"abcd\", 4, 1));\\n}"
+        }
+    ]
+}

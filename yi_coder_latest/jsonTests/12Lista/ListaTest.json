@@ -1,0 +1,17 @@
+{
+    "className": "Lista",
+    "testMethods": [
+        {
+            "methodName": "testInsereAndVaziaWithEmptyList",
+            "code": "@Test \\nvoid testInsereAndVaziaWithEmptyList() { \\n Lista list = new Lista(); \\n assertTrue(list.vazia()); \\n list.insere(\"test\"); \\n assertFalse(list.vazia()); \\n}"
+        },
+        {
+            "methodName": "testInsereAndImprimeWithOneElementList",
+            "code": "@Test \\nvoid testInsereAndImprimeWithOneElementList() { \\nStringWriter stringWriter = new StringWriter(); System.setOut(new PrintStream(stringWriter)); \\nLista list = new Lista(); \\nlist.insere(\"test\"); \\nlist.imprime(); \\nassertEquals(\"test\\n\", stringWriter.toString()); \\nSystem.setOut(System.out); \\n}"
+        },
+        {
+            "methodName": "testInsereAndImprimeWithMultipleElementsList",
+            "code": "@Test \\nvoid testInsereAndImprimeWithMultipleElementsList() { \\nStringWriter stringWriter = new StringWriter(); System.setOut(new PrintStream(stringWriter)); \\nLista list = new Lista(); \\nlist.insere(\"test1\"); \\nlist.insere(\"test2\"); \\nlist.imprime(); \\nassertEquals(\"test1\\ntest2\\n\", stringWriter.toString()); \\nSystem.setOut(System.out); \\n}"
+        }
+    ]
+}

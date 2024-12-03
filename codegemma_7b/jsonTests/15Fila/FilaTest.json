@@ -1,0 +1,37 @@
+{
+    "className": "Fila",
+    "testMethods": [
+        {
+            "methodName": "testEnfileiraComFilaVazia",
+            "code": "@Test\nvoid testEnfileiraComFilaVazia() throws Exception {\n    Fila fila = new Fila();\n    fila.enfileira(\"item\");\n    assertEquals(\"item\", fila.desenfileira());\n}"
+        },
+        {
+            "methodName": "testEnfileiraComFilaCheia",
+            "code": "@Test\nvoid testEnfileiraComFilaCheia() throws Exception {\n    Fila fila = new Fila();\n    for (int i = 0; i < 1000; i++) {\n      fila.enfileira(i);\n    }\n    try {\n      fila.enfileira(\"item\");\n      fail(\"Deveria lan\u00e7ar uma exce\u00e7\u00e3o\");\n    } catch (Exception e) {\n      assertEquals(\"Erro: A fila esta cheia\", e.getMessage());\n    }\n}"
+        },
+        {
+            "methodName": "testDesenfileiraComFilaVazia",
+            "code": "@Test\nvoid testDesenfileiraComFilaVazia() throws Exception {\n    Fila fila = new Fila();\n    try {\n      fila.desenfileira();\n      fail(\"Deveria lan\u00e7ar uma exce\u00e7\u00e3o\");\n    } catch (Exception e) {\n      assertEquals(\"Erro: A fila esta vazia\", e.getMessage());\n    }\n}"
+        },
+        {
+            "methodName": "testVaziaComFilaVazia",
+            "code": "@Test\nvoid testVaziaComFilaVazia() {\n    Fila fila = new Fila();\n    assertTrue(fila.vazia());\n}"
+        },
+        {
+            "methodName": "testVaziaComFilaComUmElemento",
+            "code": "@Test\nvoid testVaziaComFilaComUmElemento() throws Exception {\n    Fila fila = new Fila();\n    fila.enfileira(\"item\");\n    assertFalse(fila.vazia());\n}"
+        },
+        {
+            "methodName": "testImprimeComFilaVazia",
+            "code": "@Test\nvoid testImprimeComFilaVazia() {\n    Fila fila = new Fila();\n    String saida = \"{}\";\n    StringBuilder sb = new StringBuilder(saida);\n    fila.imprime();\n    assertEquals(saida, sb.toString());\n}"
+        },
+        {
+            "methodName": "testImprimeComFilaComUmElemento",
+            "code": "@Test\nvoid testImprimeComFilaComUmElemento() throws Exception {\n    Fila fila = new Fila();\n    fila.enfileira(\"item\");\n    String saida = \"item\";\n    StringBuilder sb = new StringBuilder(saida);\n    fila.imprime();\n    assertEquals(saida, sb.toString());\n}"
+        },
+        {
+            "methodName": "testImprimeComFilaComVariosElementos",
+            "code": "@Test\nvoid testImprimeComFilaComVariosElementos() throws Exception {\n    Fila fila = new Fila();\n    fila.enfileira(\"item1\");\n    fila.enfileira(\"item2\");\n    fila.enfileira(\"item3\");\n    String saida = \"item1\nitem2\nitem3\";\n    StringBuilder sb = new StringBuilder(saida);\n    fila.imprime();\n    assertEquals(saida, sb.toString());\n}"
+        }
+    ]
+}

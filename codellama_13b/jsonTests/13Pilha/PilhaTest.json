@@ -1,0 +1,25 @@
+{
+    "className": "Pilha",
+    "testMethods": [
+        {
+            "methodName": "testEmpilhaWithValidObject",
+            "code": "@Test\nvoid testEmpilhaWithValidObject() {\n  Pilha pilha = new Pilha();\n  Object obj = new Object();\n  pilha.empilha(obj);\n  assertEquals(1, pilha.tamanho());\n}"
+        },
+        {
+            "methodName": "testEmpilhaWithNullObject",
+            "code": "@Test\nvoid testEmpilhaWithNullObject() {\n  Pilha pilha = new Pilha();\n  Object obj = null;\n  assertThrows(Exception.class, () -> pilha.empilha(obj));\n}"
+        },
+        {
+            "methodName": "testDesempilhaWithValidObject",
+            "code": "@Test\nvoid testDesempilhaWithValidObject() {\n  Pilha pilha = new Pilha();\n  Object obj1 = new Object();\n  Object obj2 = new Object();\n  pilha.empilha(obj1);\n  pilha.empilha(obj2);\n  assertEquals(obj2, pilha.desempilha());\n}"
+        },
+        {
+            "methodName": "testDesempilhaWithEmptyPilha",
+            "code": "@Test\nvoid testDesempilhaWithEmptyPilha() {\n  Pilha pilha = new Pilha();\n  assertThrows(Exception.class, () -> pilha.desempilha());\n}"
+        },
+        {
+            "methodName": "testVazia",
+            "code": "@Test\nvoid testVazia() {\n  Pilha pilha = new Pilha();\n  assertTrue(pilha.vazia());\n}"
+        }
+    ]
+}

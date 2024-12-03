@@ -1,0 +1,25 @@
+{
+    "className": "Lista",
+    "testMethods": [
+        {
+            "methodName": "testListaEmptyArray",
+            "code": "@Test\nvoid testListaEmptyArray(){\n    Lista lista = new Lista();\n    assertEquals(true, lista.vazia());\n}"
+        },
+        {
+            "methodName": "testInsertIntoEmptyList",
+            "code": "@Test\nvoid testInsertIntoEmptyList() throws Exception {\n    Lista lista = new Lista();\n    lista.insere(\"item1\");\n    assertEquals(false, lista.vazia());\n}"
+        },
+        {
+            "methodName": "testInsertIntoNonEmptyList",
+            "code": "@Test\nvoid testInsertIntoNonEmptyList() throws Exception {\n    Lista lista = new Lista();\n    lista.insere(\"item1\");\n    lista.insere(\"item2\");\n    assertEquals(false, lista.vazia());\n}"
+        },
+        {
+            "methodName": "testImprimeLista",
+            "code": "@Test\nvoid testImprimeLista() throws Exception {\n    Lista lista = new Lista();\n    lista.insere(\"item1\");\n    lista.insere(\"item2\");\n    lista.imprime();\n}"
+        },
+        {
+            "methodName": "testInsertIntoFullList",
+            "code": "@Test\nvoid testInsertIntoFullList() throws Exception {\n    Lista lista = new Lista();\n    for (int i = 0; i < 1000; i++){\n      lista.insere(\"item\" + i);\n    }\n    try {\n        lista.insere(\"item1001\");\n        fail(\"Expected Exception when inserting into a full list\");\n    } catch (Exception e) {}\n}"
+        }
+    ]
+}

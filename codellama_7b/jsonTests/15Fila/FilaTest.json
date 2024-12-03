@@ -1,0 +1,41 @@
+{
+    "className": "Fila",
+    "testMethods": [
+        {
+            "methodName": "testEnfileiraWithEmptyArray",
+            "code": "@Test \\nvoid testEnfileiraWithEmptyArray() throws Exception {\\n Fila fila = new Fila();\\n assertThrows(Exception.class, () -> fila.enfileira(null));\\n}"
+        },
+        {
+            "methodName": "testDesenfileiraWithEmptyArray",
+            "code": "@Test \\nvoid testDesenfileiraWithEmptyArray() throws Exception {\\n Fila fila = new Fila();\\n assertThrows(Exception.class, () -> fila.desenfileira());\\n}"
+        },
+        {
+            "methodName": "testVaziaWithEmptyArray",
+            "code": "@Test \\nvoid testVaziaWithEmptyArray() throws Exception {\\n Fila fila = new Fila();\\n assertTrue(fila.vazia());\\n}"
+        },
+        {
+            "methodName": "testEnfileiraWithOneElement",
+            "code": "@Test \\nvoid testEnfileiraWithOneElement() throws Exception {\\n Fila fila = new Fila();\\n Object item = new Object();\\n fila.enfileira(item);\\n assertFalse(fila.vazia());\\n}"
+        },
+        {
+            "methodName": "testDesenfileiraWithOneElement",
+            "code": "@Test \\nvoid testDesenfileiraWithOneElement() throws Exception {\\n Fila fila = new Fila();\\n Object item = new Object();\\n fila.enfileira(item);\\n assertEquals(item, fila.desenfileira());\\n}"
+        },
+        {
+            "methodName": "testVaziaWithOneElement",
+            "code": "@Test \\nvoid testVaziaWithOneElement() throws Exception {\\n Fila fila = new Fila();\\n Object item = new Object();\\n fila.enfileira(item);\\n assertFalse(fila.vazia());\\n}"
+        },
+        {
+            "methodName": "testEnfileiraWithMultipleElements",
+            "code": "@Test \\nvoid testEnfileiraWithMultipleElements() throws Exception {\\n Fila fila = new Fila();\\n Object item1 = new Object();\\n Object item2 = new Object();\\n Object item3 = new Object();\\n fila.enfileira(item1);\\n fila.enfileira(item2);\\n fila.enfileira(item3);\\n assertFalse(fila.vazia());\\n}"
+        },
+        {
+            "methodName": "testDesenfileiraWithMultipleElements",
+            "code": "@Test \\nvoid testDesenfileiraWithMultipleElements() throws Exception {\\n Fila fila = new Fila();\\n Object item1 = new Object();\\n Object item2 = new Object();\\n Object item3 = new Object();\\n fila.enfileira(item1);\\n fila.enfileira(item2);\\n fila.enfileira(item3);\\n assertEquals(item1, fila.desenfileira());\\n assertEquals(item2, fila.desenfileira());\\n assertEquals(item3, fila.desenfileira());\\n}"
+        },
+        {
+            "methodName": "testVaziaWithMultipleElements",
+            "code": "@Test \\nvoid testVaziaWithMultipleElements() throws Exception {\\n Fila fila = new Fila();\\n Object item1 = new Object();\\n Object item2 = new Object();\\n Object item3 = new Object();\\n fila.enfileira(item1);\\n fila.enfileira(item2);\\n fila.enfileira(item3);\\n assertFalse(fila.vazia());\\n}"
+        }
+    ]
+}

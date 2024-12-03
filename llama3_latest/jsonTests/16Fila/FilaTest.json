@@ -1,0 +1,25 @@
+{
+    "className": "Fila",
+    "testMethods": [
+        {
+            "methodName": "testEmptyQueue",
+            "code": "@Test \nvoid testEmptyQueue() throws Exception {\n    Fila fila = new Fila();\n    assertNull(fila.desenfileira());\n}\n"
+        },
+        {
+            "methodName": "testEnqueueAndDequeue",
+            "code": "@Test \nvoid testEnqueueAndDequeue() throws Exception {\n    Fila fila = new Fila();\n    Object item1 = \"item1\";\n    Object item2 = \"item2\";\n    fila.enfileira(item1);\n    assertEquals(item1, fila.desenfileira());\n    fila.enfileira(item2);\n    assertEquals(item2, fila.desenfileira());\n}\n"
+        },
+        {
+            "methodName": "testEnqueueMultipleItems",
+            "code": "@Test \nvoid testEnqueueMultipleItems() throws Exception {\n    Fila fila = new Fila();\n    Object item1 = \"item1\";\n    Object item2 = \"item2\";\n    Object item3 = \"item3\";\n    fila.enfileira(item1);\n    fila.enfileira(item2);\n    fila.enfileira(item3);\n    assertEquals(item3, fila.desenfileira());\n    assertEquals(item2, fila.desenfileira());\n    assertEquals(item1, fila.desenfileira());\n}\n"
+        },
+        {
+            "methodName": "testDequeueFromEmptyQueue",
+            "code": "@Test \nvoid testDequeueFromEmptyQueue() throws Exception {\n    Fila fila = new Fila();\n    try {\n        fila.desenfileira();\n        fail(\"Expected exception\");\n    } catch (Exception e) {\n        assertEquals(\"Erro: A fila esta vazia\", e.getMessage());\n    }\n}\n"
+        },
+        {
+            "methodName": "testImprimeQueue",
+            "code": "@Test \nvoid testImprimeQueue() throws Exception {\n    Fila fila = new Fila();\n    Object item1 = \"item1\";\n    Object item2 = \"item2\";\n    Object item3 = \"item3\";\n    fila.enfileira(item1);\n    fila.enfileira(item2);\n    fila.enfileira(item3);\n    fila.imprime();\n    assertEquals(\" item3 item2 item1\", fila.desenfileira());\n}\n"
+        }
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "className": "Tabela",
+    "methods": [
+        {
+            "name": "pesquisaSeq",
+            "description": "Pesquisa um item na tabela sequencialmente.",
+            "parameters": [
+                {
+                    "name": "it",
+                    "type": "Item"
+                }
+            ],
+            "returnType": "int",
+            "code": "for (int i = 1; i <= this.n; i++) if (this.v[i].compara(it) == 0) return i;\nreturn 0;"
+        },
+        {
+            "name": "pesquisaBin",
+            "description": "Pesquisa um item na tabela usando pesquisa bin\u00e1ria.",
+            "parameters": [
+                {
+                    "name": "it",
+                    "type": "Item"
+                }
+            ],
+            "returnType": "int",
+            "code": "int e = 0, d = this.n; while (e <= d) { int m = (e + d)/2; if (this.v[m].compara(it) == 0) return m; else if (this.v[m].compara(it) < 0) e = m + 1; else d = m - 1; }\nreturn 0;"
+        },
+        {
+            "name": "insereOrd",
+            "description": "Insere um item na tabela mantendo a ordem.",
+            "parameters": [
+                {
+                    "name": "it",
+                    "type": "Item"
+                }
+            ],
+            "returnType": "void",
+            "code": "int e = 0, d = this.n; while (e <= d) { int m = (e + d)/2; if (this.v[m].compara(it) == 0) break; else if (this.v[m].compara(it) < 0) e = m + 1; else d = m - 1; } System.arraycopy(this.v, m, this.v, m + 1, this.n - m); this.v[m] = it; this.n++;"
+        },
+        {
+            "name": "remove",
+            "description": "Remove um item da tabela.",
+            "parameters": [
+                {
+                    "name": "it",
+                    "type": "Item"
+                }
+            ],
+            "returnType": "boolean",
+            "code": "int p = this.pesquisaSeq(it); if (p == 0) return false; System.arraycopy(this.v, p + 1, this.v, p, this.n - p); this.n--; return true;"
+        }
+    ]
+}

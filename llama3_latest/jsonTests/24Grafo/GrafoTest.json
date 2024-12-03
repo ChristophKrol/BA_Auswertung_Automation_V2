@@ -1,0 +1,33 @@
+{
+    "className": "Grafo",
+    "testMethods": [
+        {
+            "methodName": "testGrafoConstructor",
+            "code": "@Test \nvoid testGrafoConstructor() {\n\tGrafo grafo = new Grafo();\n\tassertThat(grafo.numVertices, equalTo(100));\n\tassertThat(grafo.mat.length, equalTo(100));\n\tassertThat(grafo.pos.length, equalTo(100));\n}\n"
+        },
+        {
+            "methodName": "testInsereAresta",
+            "code": "@Test \nvoid testInsereAresta() {\n\tGrafo grafo = new Grafo();\n\tgrafo.insereAresta(0, 1, 5);\n\tassertThat(grafo.mat[0][1], equalTo(5));\n}\n"
+        },
+        {
+            "methodName": "testExisteAresta",
+            "code": "@Test \nvoid testExisteAresta() {\n\tGrafo grafo = new Grafo();\n\tgrafo.insereAresta(0, 1, 5);\n\tassertTrue(grafo.existeAresta(0, 1));\n}\n"
+        },
+        {
+            "methodName": "testListaAdjVazia",
+            "code": "@Test \nvoid testListaAdjVazia() {\n\tGrafo grafo = new Grafo();\n\tassertFalse(grafo.listaAdjVazia(0));\n}\n"
+        },
+        {
+            "methodName": "testPrimeiroListaAdj",
+            "code": "@Test \nvoid testPrimeiroListaAdj() {\n\tGrafo grafo = new Grafo();\n\tAresta aresta = grafo.primeiroListaAdj(0);\n\tassertThat(aresta, notNullValue());\n}\n"
+        },
+        {
+            "methodName": "testRetiraAresta",
+            "code": "@Test \nvoid testRetiraAresta() {\n\tGrafo grafo = new Grafo();\n\tgrafo.insereAresta(0, 1, 5);\n\tAresta aresta = grafo.retiraAresta(0, 1);\n\tassertThat(aresta, notNullValue());\n}\n"
+        },
+        {
+            "methodName": "testGrafoTransposto",
+            "code": "@Test \nvoid testGrafoTransposto() {\n\tGrafo grafo = new Grafo();\n\tgrafo.insereAresta(0, 1, 5);\n\tGrafo grafoT = grafo.grafoTransposto();\n\tassertTrue(grafoT.existeAresta(1, 0));\n}\n"
+        }
+    ]
+}

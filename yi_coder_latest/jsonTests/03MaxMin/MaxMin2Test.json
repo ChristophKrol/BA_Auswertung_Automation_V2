@@ -1,0 +1,21 @@
+{
+    "className": "MaxMin2",
+    "testMethods": [
+        {
+            "methodName": "testMaxMinWithEmptyArray",
+            "code": "@Test \\nvoid testMaxMinWithEmptyArray() throws Exception {\\n  assertNull(MaxMin2.maxMin2(new int[0], 0));\\n}"
+        },
+        {
+            "methodName": "testMaxMinWithOneElementArray",
+            "code": "@Test \\nvoid testMaxMinWithOneElementArray() throws Exception {\\n  assertEquals(1, MaxMin2.maxMin2(new int[]{1})[0]);\\n  assertEquals(1, MaxMin2.maxMin2(new int[]{1})[1]);\\n}"
+        },
+        {
+            "methodName": "testMaxMinWithMultipleElementsArray",
+            "code": "@Test \\nvoid testMaxMinWithMultipleElementsArray() throws Exception {\\n  assertEquals(3, MaxMin2.maxMin2(new int[]{1, 2, 3})[0]);\\n  assertEquals(1, MaxMin2.maxMin2(new int[]{1, 2, 3})[1]);\\n}"
+        },
+        {
+            "methodName": "testMaxMinWithNegativeElementsArray",
+            "code": "@Test \\nvoid testMaxMinWithNegativeElementsArray() throws Exception {\\n  assertEquals(-1, MaxMin2.maxMin2(new int[]{-3, -2, -1})[0]);\\n  assertEquals(-3, MaxMin2.maxMin2(new int[]{-3, -2, -1})[1]);\\n}"
+        }
+    ]
+}

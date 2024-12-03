@@ -1,0 +1,29 @@
+{
+    "className": "Identifier",
+    "testMethods": [
+        {
+            "methodName": "testValidateWithIdentifierNull",
+            "code": "@Test\nvoid testValidateWithIdentifierNull(){\n\tassertThat(Identifier.validateIdentifier(null), equalTo(false));\n}"
+        },
+        {
+            "methodName": "testValidateWithIdentifierEmptyString",
+            "code": "@Test\nvoid testValidateWithIdentifierEmptyString(){\n\tassertThat(Identifier.validateIdentifier(\""
+        },
+        {
+            "methodName": "testValidateWithIdentifierValidString",
+            "code": "@Test\nvoid testValidateWithIdentifierValidString(){\n\tassertThat(Identifier.validateIdentifier(\"valid_string\"), equalTo(true));\n}"
+        },
+        {
+            "methodName": "testValidateWithIdentifierInvalidString",
+            "code": "@Test\nvoid testValidateWithIdentifierInvalidString(){\n\tassertThat(Identifier.validateIdentifier(\"invalid_string\"), equalTo(false));\n}"
+        },
+        {
+            "methodName": "testValidateWithIdentifierLengthLessThanOne",
+            "code": "@Test\nvoid testValidateWithIdentifierLengthLessThanOne(){\n\tassertThat(Identifier.validateIdentifier(\"a\"), equalTo(false));\n}"
+        },
+        {
+            "methodName": "testValidateWithIdentifierLengthGreaterThanFive",
+            "code": "@Test\nvoid testValidateWithIdentifierLengthGreaterThanFive(){\n\tassertThat(Identifier.validateIdentifier(\"abcdefg\"), equalTo(false));\n}"
+        }
+    ]
+}

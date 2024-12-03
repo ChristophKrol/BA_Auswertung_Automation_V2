@@ -1,0 +1,33 @@
+{
+    "className": "Pilha",
+    "testMethods": [
+        {
+            "methodName": "testPilhaEmptyArray",
+            "code": "@Test\nvoid testPilhaEmptyArray(){\n    Pilha pilha = new Pilha();\n    assertEquals(0, pilha.tamanho());\n}\n"
+        },
+        {
+            "methodName": "testPilhaPushOneElement",
+            "code": "@Test\nvoid testPilhaPushOneElement(){\n    Pilha pilha = new Pilha();\n    pilha.empilha(\"item\");\n    assertEquals(1, pilha.tamanho());\n}\n"
+        },
+        {
+            "methodName": "testPilhaPopOneElement",
+            "code": "@Test\nvoid testPilhaPopOneElement(){\n    Pilha pilha = new Pilha();\n    pilha.empilha(\"item\");\n    assertEquals(\"item\", pilha.desempilha());\n}\n"
+        },
+        {
+            "methodName": "testPilhaPushMultipleElements",
+            "code": "@Test\nvoid testPilhaPushMultipleElements(){\n    Pilha pilha = new Pilha();\n    pilha.empilha(\"item1\");\n    pilha.empilha(\"item2\");\n    pilha.empilha(\"item3\");\n    assertEquals(3, pilha.tamanho());\n}\n"
+        },
+        {
+            "methodName": "testPilhaPopMultipleElements",
+            "code": "@Test\nvoid testPilhaPopMultipleElements(){\n    Pilha pilha = new Pilha();\n    pilha.empilha(\"item1\");\n    pilha.empilha(\"item2\");\n    pilha.empilha(\"item3\");\n    assertEquals(\"item3\", pilha.desempilha());\n}\n"
+        },
+        {
+            "methodName": "testPilhaEmptyArrayVazia",
+            "code": "@Test\nvoid testPilhaEmptyArrayVazia(){\n    Pilha pilha = new Pilha();\n    assertTrue(pilha.vazia());\n}\n"
+        },
+        {
+            "methodName": "testPilhaNotEmptyArray",
+            "code": "@Test\nvoid testPilhaNotEmptyArray(){\n    Pilha pilha = new Pilha();\n    pilha.empilha(\"item\");\n    assertFalse(pilha.vazia());\n}\n"
+        }
+    ]
+}

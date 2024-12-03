@@ -1,0 +1,33 @@
+{
+    "className": "Pilha",
+    "testMethods": [
+        {
+            "methodName": "testEmpilhaComPilhaVazia",
+            "code": "@Test\nvoid testEmpilhaComPilhaVazia() throws Exception {\n    Pilha pilha = new Pilha();\n    pilha.empilha(\"a\");\n    assertEquals(\"a\", pilha.desempilha());\n}"
+        },
+        {
+            "methodName": "testEmpilhaComPilhaCheia",
+            "code": "@Test\nvoid testEmpilhaComPilhaCheia() throws Exception {\n    Pilha pilha = new Pilha();\n    for (int i = 0; i < 1000; i++) {\n      pilha.empilha(i);\n    }\n    try {\n      pilha.empilha(1000);\n      fail(\"Deveria lan\u00e7ar uma exce\u00e7\u00e3o\");\n    } catch (Exception e) {\n      // Ignorar\n    }\n}"
+        },
+        {
+            "methodName": "testDesempilhaComPilhaVazia",
+            "code": "@Test\nvoid testDesempilhaComPilhaVazia() throws Exception {\n    Pilha pilha = new Pilha();\n    try {\n      pilha.desempilha();\n      fail(\"Deveria lan\u00e7ar uma exce\u00e7\u00e3o\");\n    } catch (Exception e) {\n      // Ignorar\n    }\n}"
+        },
+        {
+            "methodName": "testTamanhoComPilhaVazia",
+            "code": "@Test\nvoid testTamanhoComPilhaVazia() {\n    Pilha pilha = new Pilha();\n    assertEquals(0, pilha.tamanho());\n}"
+        },
+        {
+            "methodName": "testTamanhoComPilhaComElementos",
+            "code": "@Test\nvoid testTamanhoComPilhaComElementos() throws Exception {\n    Pilha pilha = new Pilha();\n    pilha.empilha(\"a\");\n    pilha.empilha(\"b\");\n    assertEquals(2, pilha.tamanho());\n}"
+        },
+        {
+            "methodName": "testVaziaComPilhaVazia",
+            "code": "@Test\nvoid testVaziaComPilhaVazia() {\n    Pilha pilha = new Pilha();\n    assertTrue(pilha.vazia());\n}"
+        },
+        {
+            "methodName": "testVaziaComPilhaComElementos",
+            "code": "@Test\nvoid testVaziaComPilhaComElementos() throws Exception {\n    Pilha pilha = new Pilha();\n    pilha.empilha(\"a\");\n    assertFalse(pilha.vazia());\n}"
+        }
+    ]
+}

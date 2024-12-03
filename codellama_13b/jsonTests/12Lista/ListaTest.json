@@ -1,0 +1,29 @@
+{
+    "className": "Lista",
+    "testMethods": [
+        {
+            "methodName": "testInsereWithNullItem",
+            "code": "@Test \\nvoid testInsereWithNullItem(){\\n assertThrows(NullPointerException.class, () -> lista.insere(null));\\n}"
+        },
+        {
+            "methodName": "testInsereWithNonNullItem",
+            "code": "@Test \\nvoid testInsereWithNonNullItem(){\\n assertDoesNotThrow(() -> lista.insere(new Object()));\\n}"
+        },
+        {
+            "methodName": "testVaziaWithEmptyList",
+            "code": "@Test \\nvoid testVaziaWithEmptyList(){\\n assertTrue(lista.vazia());\\n}"
+        },
+        {
+            "methodName": "testVaziaWithNonEmptyList",
+            "code": "@Test \\nvoid testVaziaWithNonEmptyList(){\\n lista.insere(new Object());\\n assertFalse(lista.vazia());\\n}"
+        },
+        {
+            "methodName": "testImprimeWithEmptyList",
+            "code": "@Test \\nvoid testImprimeWithEmptyList(){\\n assertDoesNotThrow(() -> lista.imprime());\\n}"
+        },
+        {
+            "methodName": "testImprimeWithNonEmptyList",
+            "code": "@Test \\nvoid testImprimeWithNonEmptyList(){\\n lista.insere(new Object());\\n assertDoesNotThrow(() -> lista.imprime());\\n}"
+        }
+    ]
+}

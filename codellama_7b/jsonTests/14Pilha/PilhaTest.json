@@ -1,0 +1,25 @@
+{
+    "className": "Pilha",
+    "testMethods": [
+        {
+            "methodName": "testVazia",
+            "code": "@Test \\nvoid testVazia(){\\n assertTrue(new Pilha().vazia());\\n}"
+        },
+        {
+            "methodName": "testEmpilha",
+            "code": "@Test \\nvoid testEmpilha(){\\n Pilha pilha = new Pilha();\\n Object item = new Object();\\n pilha.empilha(item);\\n assertFalse(pilha.vazia());\\n}"
+        },
+        {
+            "methodName": "testDesempilha",
+            "code": "@Test \\nvoid testDesempilha(){\\n Pilha pilha = new Pilha();\\n Object item = new Object();\\n pilha.empilha(item);\\n assertEquals(item, pilha.desempilha());\\n}"
+        },
+        {
+            "methodName": "testTamanho",
+            "code": "@Test \\nvoid testTamanho(){\\n Pilha pilha = new Pilha();\\n Object item1 = new Object();\\n Object item2 = new Object();\\n pilha.empilha(item1);\\n pilha.empilha(item2);\\n assertEquals(2, pilha.tamanho());\\n}"
+        },
+        {
+            "methodName": "testDesempilhaVazia",
+            "code": "@Test \\nvoid testDesempilhaVazia(){\\n Pilha pilha = new Pilha();\\n assertThrows(Exception.class, () -> pilha.desempilha());\\n}"
+        }
+    ]
+}

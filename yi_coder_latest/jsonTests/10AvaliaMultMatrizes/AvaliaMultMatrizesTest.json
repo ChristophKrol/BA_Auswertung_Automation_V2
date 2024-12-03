@@ -1,0 +1,21 @@
+{
+    "className": "AvaliaMultMatrizes",
+    "testMethods": [
+        {
+            "methodName": "testMultmatrizeWithNullArray",
+            "code": "@Test(expected = NullPointerException.class) \\nvoid testMultmatrizeWithNullArray() throws IOException { AvaliaMultMatrizes.multmatrize(null); }"
+        },
+        {
+            "methodName": "testMultmatrizeWithEmptyArray",
+            "code": "@Test \\nvoid testMultmatrizeWithEmptyArray() throws IOException { AvaliaMultMatrizes.multmatrize(new int[0]); }"
+        },
+        {
+            "methodName": "testMultmatrizeWithOneElementArray",
+            "code": "@Test \\nvoid testMultmatrizeWithOneElementArray() throws IOException { AvaliaMultMatrizes.multmatrize(new int[]{1}); }"
+        },
+        {
+            "methodName": "testMultmatrizeWithMultipleElementsArray",
+            "code": "@Test \\nvoid testMultmatrizeWithMultipleElementsArray() throws IOException { AvaliaMultMatrizes.multmatrize(new int[]{1, 2, 3}); }"
+        }
+    ]
+}

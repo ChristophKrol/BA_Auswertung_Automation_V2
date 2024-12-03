@@ -1,0 +1,25 @@
+{
+    "className": "Ordenacao",
+    "testMethods": [
+        {
+            "methodName": "testOrdenaWithEmptyArray",
+            "code": "@Test \\nvoid testOrdenaWithEmptyArray() throws Exception {\\n int[] array = new int[0];\\n Max.max(array, 0);\\n}"
+        },
+        {
+            "methodName": "testOrdenaWithOneElementArray",
+            "code": "@Test \\nvoid testOrdenaWithOneElementArray() throws Exception {\\n int[] array = new int[]{1};\\n assertEquals(1, Max.max(array, 1));\\n}"
+        },
+        {
+            "methodName": "testOrdenaWithMultipleElementsArray",
+            "code": "@Test \\nvoid testOrdenaWithMultipleElementsArray() throws Exception {\\n int[] array = new int[]{3, 2, 1};\\n assertEquals(1, Max.max(array, 3));\\n}"
+        },
+        {
+            "methodName": "testOrdenaWithNegativeValues",
+            "code": "@Test \\nvoid testOrdenaWithNegativeValues() throws Exception {\\n int[] array = new int[]{-5, -2, 0};\\n assertEquals(0, Max.max(array, 3));\\n}"
+        },
+        {
+            "methodName": "testOrdenaWithPositiveAndNegativeValues",
+            "code": "@Test \\nvoid testOrdenaWithPositiveAndNegativeValues() throws Exception {\\n int[] array = new int[]{5, -2, 0};\\n assertEquals(5, Max.max(array, 3));\\n}"
+        }
+    ]
+}

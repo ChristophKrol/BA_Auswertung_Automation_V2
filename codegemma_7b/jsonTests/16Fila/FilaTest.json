@@ -1,0 +1,25 @@
+{
+    "className": "Fila",
+    "testMethods": [
+        {
+            "methodName": "testCriaUmaFilaVazia",
+            "code": "@Test\nvoid testCriaUmaFilaVazia() {\n    Fila fila = new Fila();\n    assertTrue(fila.vazia());\n}"
+        },
+        {
+            "methodName": "testEnfileira",
+            "code": "@Test\nvoid testEnfileira() throws Exception {\n    Fila fila = new Fila();\n    fila.enfileira(\"a\");\n    assertFalse(fila.vazia());\n}"
+        },
+        {
+            "methodName": "testDesenfileira",
+            "code": "@Test\nvoid testDesenfileira() throws Exception {\n    Fila fila = new Fila();\n    fila.enfileira(\"a\");\n    assertEquals(\"a\", fila.desenfileira());\n}"
+        },
+        {
+            "methodName": "testDesenfileiraEmUmaFilaVazia",
+            "code": "@Test\nvoid testDesenfileiraEmUmaFilaVazia() {\n    Fila fila = new Fila();\n    try {\n        fila.desenfileira();\n        fail(\"Deveria lan\u00e7ar uma exce\u00e7\u00e3o\");\n    } catch (Exception e) {\n        assertEquals(\"Erro: A fila esta vazia\", e.getMessage());\n    }"
+        },
+        {
+            "methodName": "testImprime",
+            "code": "@Test\nvoid testImprime() throws Exception {\n    Fila fila = new Fila();\n    fila.enfileira(\"a\");\n    fila.enfileira(\"b\");\n    ByteArrayOutputStream outContent = new ByteArrayOutputStream();\n    System.setOut(new PrintStream(outContent));\n    fila.imprime();\n    assertEquals(\" a b\", outContent.toString());\n}"
+        }
+    ]
+}

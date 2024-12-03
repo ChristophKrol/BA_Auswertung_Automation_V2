@@ -1,0 +1,25 @@
+{
+    "className": "ShiftAndAproximado",
+    "testMethods": [
+        {
+            "methodName": "testShiftAndAproximadoWithEmptyText",
+            "code": "@Test \n void testShiftAndAproximadoWithEmptyText() {\n  CasamentoAproximado.shiftAndAproximado(\"\", 0, \"abc\", 3, 1); \n}"
+        },
+        {
+            "methodName": "testShiftAndAproximadoWithEmptyPattern",
+            "code": "@Test \n void testShiftAndAproximadoWithEmptyPattern() {\n  CasamentoAproximado.shiftAndAproximado(\"abc\", 3, \"\", 0, 1); \n}"
+        },
+        {
+            "methodName": "testShiftAndAproximadoWithSmallTextAndPattern",
+            "code": "@Test \n void testShiftAndAproximadoWithSmallTextAndPattern() {\n  CasamentoAproximado.shiftAndAproximado(\"abc\", 3, \"a\", 1, 1); \n}"
+        },
+        {
+            "methodName": "testShiftAndAproximadoWithLargeTextAndSmallPattern",
+            "code": "@Test \n void testShiftAndAproximadoWithLargeTextAndSmallPattern() {\n  CasamentoAproximado.shiftAndAproximado(\"abc\".repeat(100), 300, \"a\", 1, 1); \n}"
+        },
+        {
+            "methodName": "testShiftAndAproximadoWithLargeTextAndLargePattern",
+            "code": "@Test \n void testShiftAndAproximadoWithLargeTextAndLargePattern() {\n  CasamentoAproximado.shiftAndAproximado(\"abc\".repeat(100), 300, \"abc\".repeat(50), 150, 1); \n}"
+        }
+    ]
+}

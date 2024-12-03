@@ -1,0 +1,25 @@
+{
+    "className": "Lista",
+    "testMethods": [
+        {
+            "methodName": "testInsereWithEmptyList",
+            "code": "@Test \\nvoid testInsereWithEmptyList(){\\n assertEquals(1, lista.insere(item));\\n}"
+        },
+        {
+            "methodName": "testInsereWithFullList",
+            "code": "@Test (expected = Exception.class) \\nvoid testInsereWithFullList(){\\n assertThrows(Exception.class, () -> lista.insere(item));\\n}"
+        },
+        {
+            "methodName": "testVazia",
+            "code": "@Test \\nvoid testVazia(){\\n assertTrue(lista.vazia());\\n}"
+        },
+        {
+            "methodName": "testImprimeWithEmptyList",
+            "code": "@Test \\nvoid testImprimeWithEmptyList(){\\n assertEquals(\"\", lista.imprime());\\n}"
+        },
+        {
+            "methodName": "testImprimeWithNonEmptyList",
+            "code": "@Test \\nvoid testImprimeWithNonEmptyList(){\\n assertNotEquals(\"\", lista.imprime());\\n}"
+        }
+    ]
+}

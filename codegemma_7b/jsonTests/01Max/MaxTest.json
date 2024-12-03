@@ -1,0 +1,29 @@
+{
+    "className": "Max",
+    "testMethods": [
+        {
+            "methodName": "testMaxWithEmptyArray",
+            "code": "@Test\nvoid testMaxWithEmptyArray() {\n assertNull(Max.max(new Item[0], 0));\n}"
+        },
+        {
+            "methodName": "testMaxWithOneElementArray",
+            "code": "@Test\nvoid testMaxWithOneElementArray() {\n assertEquals(item, Max.max(new Item[]{item}, 1));\n}"
+        },
+        {
+            "methodName": "testMaxWithMultipleElementsArray",
+            "code": "@Test\nvoid testMaxWithMultipleElementsArray() {\n assertEquals(item3, Max.max(new Item[]{item1, item2, item3}, 3));\n}"
+        },
+        {
+            "methodName": "testMaxWithBoundaryValues",
+            "code": "@Test\nvoid testMaxWithBoundaryValues() {\n assertEquals(item1, Max.max(new Item[]{item1, item2}, 2));\n}"
+        },
+        {
+            "methodName": "testMaxWithNegativeValues",
+            "code": "@Test\nvoid testMaxWithNegativeValues() {\n assertEquals(item2, Max.max(new Item[]{item1, item2}, 2));\n}"
+        },
+        {
+            "methodName": "testMaxWithNullPointerException",
+            "code": "@Test\nvoid testMaxWithNullPointerException() {\n assertThrows(NullPointerException.class, () -> Max.max(null, 0));\n}"
+        }
+    ]
+}

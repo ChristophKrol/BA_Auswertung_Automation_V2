@@ -1,0 +1,25 @@
+{
+    "className": "Lista",
+    "testMethods": [
+        {
+            "methodName": "testEmptyList",
+            "code": "@Test\nvoid testEmptyList() {\n    Lista lista = new Lista();\n    assertTrue(lista.vazia());\n}\n"
+        },
+        {
+            "methodName": "testInsertOneElement",
+            "code": "@Test\nvoid testInsertOneElement() {\n    Lista lista = new Lista();\n    lista.insere(\"Item 1\");\n    assertFalse(lista.vazia());\n}\n"
+        },
+        {
+            "methodName": "testInsertMultipleElements",
+            "code": "@Test\nvoid testInsertMultipleElements() {\n    Lista lista = new Lista();\n    lista.insere(\"Item 1\");\n    lista.insere(\"Item 2\");\n    lista.insere(\"Item 3\");\n    assertFalse(lista.vazia());\n}\n"
+        },
+        {
+            "methodName": "testPrintList",
+            "code": "@Test\nvoid testPrintList() {\n    Lista lista = new Lista();\n    lista.insere(\"Item 1\");\n    lista.insere(\"Item 2\");\n    lista.insere(\"Item 3\");\n    lista.imprime();\n}\n"
+        },
+        {
+            "methodName": "testInsertNullElement",
+            "code": "@Test\nvoid testInsertNullElement() {\n    Lista lista = new Lista();\n    lista.insere(null);\n    assertFalse(lista.vazia());\n}\n"
+        }
+    ]
+}

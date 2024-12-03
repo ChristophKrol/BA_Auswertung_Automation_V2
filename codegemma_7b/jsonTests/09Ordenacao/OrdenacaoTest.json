@@ -1,0 +1,29 @@
+{
+    "className": "Ordenacao",
+    "testMethods": [
+        {
+            "methodName": "testMergeSortWithEmptyArray",
+            "code": "@Test\nvoid testMergeSortWithEmptyArray() {\n assertEquals(new int[0], Ordenacao.mergeSort(new int[0], 0, -1));\n}"
+        },
+        {
+            "methodName": "testMergeSortWithSingleElementArray",
+            "code": "@Test\nvoid testMergeSortWithSingleElementArray() {\n int[] v = {5};\n int[] expected = {5};\n assertEquals(expected, Ordenacao.mergeSort(v, 0, 0));\n}"
+        },
+        {
+            "methodName": "testMergeSortWithMultipleElementsArray",
+            "code": "@Test\nvoid testMergeSortWithMultipleElementsArray() {\n int[] v = {5, 2, 4, 6, 1};\n int[] expected = {1, 2, 4, 5, 6};\n assertEquals(expected, Ordenacao.mergeSort(v, 0, v.length - 1));\n}"
+        },
+        {
+            "methodName": "testMergeSortWithNegativeValues",
+            "code": "@Test\nvoid testMergeSortWithNegativeValues() {\n int[] v = {-5, -2, -4, -6, -1};\n int[] expected = {-6, -5, -4, -2, -1};\n assertEquals(expected, Ordenacao.mergeSort(v, 0, v.length - 1));\n}"
+        },
+        {
+            "methodName": "testMergeSortWithBoundaryValues",
+            "code": "@Test\nvoid testMergeSortWithBoundaryValues() {\n int[] v = {Integer.MIN_VALUE, Integer.MAX_VALUE};\n int[] expected = {Integer.MIN_VALUE, Integer.MAX_VALUE};\n assertEquals(expected, Ordenacao.mergeSort(v, 0, v.length - 1));\n}"
+        },
+        {
+            "methodName": "testMergeSortWithException",
+            "code": "@Test\nvoid testMergeSortWithException() {\n assertThrows(IndexOutOfBoundsException.class, () -> {\n Ordenacao.mergeSort(new int[0], 0, 1);\n});\n}"
+        }
+    ]
+}

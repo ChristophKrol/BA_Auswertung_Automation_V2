@@ -1,0 +1,21 @@
+{
+    "className": "Identifier",
+    "testMethods": [
+        {
+            "methodName": "validateIdentifierWithNullString",
+            "code": "@Test \\nvoid validateIdentifierWithNullString() throws Exception {\\n Identifier id = new Identifier();\\n assertFalse(id.validateIdentifier(null));\\n}"
+        },
+        {
+            "methodName": "validateIdentifierWithEmptyString",
+            "code": "@Test \\nvoid validateIdentifierWithEmptyString() throws Exception {\\n Identifier id = new Identifier();\\n assertFalse(id.validateIdentifier(\"\"));\\n}"
+        },
+        {
+            "methodName": "validateIdentifierWithInvalidCharacters",
+            "code": "@Test \\nvoid validateIdentifierWithInvalidCharacters() throws Exception {\\n Identifier id = new Identifier();\\n assertFalse(id.validateIdentifier(\"1234567890\"));\\n}"
+        },
+        {
+            "methodName": "validateIdentifierWithValidString",
+            "code": "@Test \\nvoid validateIdentifierWithValidString() throws Exception {\\n Identifier id = new Identifier();\\n assertTrue(id.validateIdentifier(\"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ\"));\\n}"
+        }
+    ]
+}

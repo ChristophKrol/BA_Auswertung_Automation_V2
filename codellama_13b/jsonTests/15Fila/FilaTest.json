@@ -1,0 +1,29 @@
+{
+    "className": "Fila",
+    "testMethods": [
+        {
+            "methodName": "testEnfileiraWithEmptyQueue",
+            "code": "@Test\nvoid testEnfileiraWithEmptyQueue() {\n assertEquals(1, Fila.enfileira(new Object()));\n}"
+        },
+        {
+            "methodName": "testEnfileiraWithFullQueue",
+            "code": "@Test\nvoid testEnfileiraWithFullQueue() {\n assertThrows(Exception.class, () -> Fila.enfileira(new Object()));\n}"
+        },
+        {
+            "methodName": "testDesenfileiraWithEmptyQueue",
+            "code": "@Test\nvoid testDesenfileiraWithEmptyQueue() {\n assertThrows(Exception.class, () -> Fila.desenfileira());\n}"
+        },
+        {
+            "methodName": "testDesenfileiraWithNonEmptyQueue",
+            "code": "@Test\nvoid testDesenfileiraWithNonEmptyQueue() {\n assertEquals(new Object(), Fila.desenfileira());\n}"
+        },
+        {
+            "methodName": "testVaziaWithEmptyQueue",
+            "code": "@Test\nvoid testVaziaWithEmptyQueue() {\n assertTrue(Fila.vazia());\n}"
+        },
+        {
+            "methodName": "testVaziaWithNonEmptyQueue",
+            "code": "@Test\nvoid testVaziaWithNonEmptyQueue() {\n assertFalse(Fila.vazia());\n}"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "className": "Fibonacci",
+    "testMethods": [
+        {
+            "methodName": "testFibIterWithNegativeInput",
+            "code": "@Test \\nvoid testFibIterWithNegativeInput() throws Exception {\\n assertEquals(0, Fibonacci.fibIter(-1));\\n}"
+        },
+        {
+            "methodName": "testFibIterWithZeroInput",
+            "code": "@Test \\nvoid testFibIterWithZeroInput() throws Exception {\\n assertEquals(0, Fibonacci.fibIter(0));\\n}"
+        },
+        {
+            "methodName": "testFibIterWithOneInput",
+            "code": "@Test \\nvoid testFibIterWithOneInput() throws Exception {\\n assertEquals(1, Fibonacci.fibIter(1));\\n}"
+        },
+        {
+            "methodName": "testFibIterWithTwoInput",
+            "code": "@Test \\nvoid testFibIterWithTwoInput() throws Exception {\\n assertEquals(1, Fibonacci.fibIter(2));\\n}"
+        },
+        {
+            "methodName": "testFibIterWithThreeInput",
+            "code": "@Test \\nvoid testFibIterWithThreeInput() throws Exception {\\n assertEquals(2, Fibonacci.fibIter(3));\\n}"
+        }
+    ]
+}

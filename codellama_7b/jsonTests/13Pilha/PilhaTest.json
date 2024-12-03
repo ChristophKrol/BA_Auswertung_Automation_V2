@@ -1,0 +1,29 @@
+{
+    "className": "Pilha",
+    "testMethods": [
+        {
+            "methodName": "testVazia",
+            "code": "@Test \\nvoid testVazia(){\\n Pilha pilha = new Pilha();\\n assertTrue(pilha.vazia());\\n}"
+        },
+        {
+            "methodName": "testEmpilha",
+            "code": "@Test \\nvoid testEmpilha(){\\n Pilha pilha = new Pilha();\\n pilha.empilha(1);\\n assertFalse(pilha.vazia());\\n}"
+        },
+        {
+            "methodName": "testDesempilha",
+            "code": "@Test \\nvoid testDesempilha(){\\n Pilha pilha = new Pilha();\\n pilha.empilha(1);\\n assertEquals(1, pilha.desempilha());\\n}"
+        },
+        {
+            "methodName": "testTamanho",
+            "code": "@Test \\nvoid testTamanho(){\\n Pilha pilha = new Pilha();\\n pilha.empilha(1);\\n assertEquals(1, pilha.tamanho());\\n}"
+        },
+        {
+            "methodName": "testEmpilhaLimite",
+            "code": "@Test \\nvoid testEmpilhaLimite(){\\n Pilha pilha = new Pilha();\\n for (int i = 0; i < 1000; i++) pilha.empilha(i);\\n assertEquals(1000, pilha.tamanho());\\n}"
+        },
+        {
+            "methodName": "testDesempilhaLimite",
+            "code": "@Test \\nvoid testDesempilhaLimite(){\\n Pilha pilha = new Pilha();\\n for (int i = 0; i < 1000; i++) pilha.empilha(i);\\n for (int i = 0; i < 1000; i++) assertEquals(i, pilha.desempilha());\\n}"
+        }
+    ]
+}

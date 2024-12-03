@@ -1,0 +1,17 @@
+{
+    "className": "AvaliaMultMatrizes",
+    "testMethods": [
+        {
+            "methodName": "testMultmatrizeWithEmptyArray",
+            "code": "@Test \\nvoid testMultmatrizeWithEmptyArray() throws IOException {\\n assertNull(AvaliaMultMatrizes.multmatrize(0, new int[0]));\\n}"
+        },
+        {
+            "methodName": "testMultmatrizeWithOneElementArray",
+            "code": "@Test \\nvoid testMultmatrizeWithOneElementArray() throws IOException {\\n assertEquals(1, AvaliaMultMatrizes.multmatrize(1, new int[]{1}));\\n}"
+        },
+        {
+            "methodName": "testMultmatrizeWithMultipleElementsArray",
+            "code": "@Test \\nvoid testMultmatrizeWithMultipleElementsArray() throws IOException {\\n assertEquals(6, AvaliaMultMatrizes.multmatrize(3, new int[]{1, 2, 3}));\\n}"
+        }
+    ]
+}

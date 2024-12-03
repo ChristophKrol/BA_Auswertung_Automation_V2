@@ -1,0 +1,33 @@
+{
+    "className": "Grafo",
+    "testMethods": [
+        {
+            "methodName": "testInsereAresta",
+            "code": "@Test \\nvoid testInsereAresta(){\\n Grafo grafo = new Grafo();\\n Aresta aresta = new Aresta(1, 2, 3);\\n grafo.insereAresta(aresta);\\n assertEquals(3, grafo.mat[1][2]);\\n}"
+        },
+        {
+            "methodName": "testExisteAresta",
+            "code": "@Test \\nvoid testExisteAresta(){\\n Grafo grafo = new Grafo();\\n Aresta aresta = new Aresta(1, 2, 3);\\n grafo.insereAresta(aresta);\\n assertTrue(grafo.existeAresta(1, 2));\\n}"
+        },
+        {
+            "methodName": "testListaAdjVazia",
+            "code": "@Test \\nvoid testListaAdjVazia(){\\n Grafo grafo = new Grafo();\\n assertTrue(grafo.listaAdjVazia(1));\\n}"
+        },
+        {
+            "methodName": "testPrimeiroListaAdj",
+            "code": "@Test \\nvoid testPrimeiroListaAdj(){\\n Grafo grafo = new Grafo();\\n Aresta aresta = new Aresta(1, 2, 3);\\n grafo.insereAresta(aresta);\\n assertEquals(new Aresta(1, 2, 3), grafo.primeiroListaAdj(1));\\n}"
+        },
+        {
+            "methodName": "testProxAdj",
+            "code": "@Test \\nvoid testProxAdj(){\\n Grafo grafo = new Grafo();\\n Aresta aresta = new Aresta(1, 2, 3);\\n grafo.insereAresta(aresta);\\n assertEquals(new Aresta(1, 2, 3), grafo.proxAdj(1));\\n}"
+        },
+        {
+            "methodName": "testRetiraAresta",
+            "code": "@Test \\nvoid testRetiraAresta(){\\n Grafo grafo = new Grafo();\\n Aresta aresta = new Aresta(1, 2, 3);\\n grafo.insereAresta(aresta);\\n assertEquals(new Aresta(1, 2, 3), grafo.retiraAresta(1, 2));\\n}"
+        },
+        {
+            "methodName": "testGrafoTransposto",
+            "code": "@Test \\nvoid testGrafoTransposto(){\\n Grafo grafo = new Grafo();\\n Aresta aresta = new Aresta(1, 2, 3);\\n grafo.insereAresta(aresta);\\n assertEquals(new Grafo(), grafo.grafoTransposto());\\n}"
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "className": "Pilha",
+    "testMethods": [
+        {
+            "methodName": "testEmpilhaAndDesempilha",
+            "code": "@Test \\nvoid testEmpilhaAndDesempilha() throws Exception {\\n  Pilha pilha = new Pilha();\\n  pilha.empilha(1);\\n  assertEquals(1, pilha.desempilha());\\n}"
+        },
+        {
+            "methodName": "testDesempilhaEmptyStackException",
+            "code": "@Test (expected = Exception.class)\\nvoid testDesempilhaEmptyStackException() throws Exception {\\n  Pilha pilha = new Pilha();\\n  pilha.desempilha();\\n}"
+        },
+        {
+            "methodName": "testVaziaMethod",
+            "code": "@Test \\nvoid testVaziaMethod() {\\n  Pilha pilha = new Pilha();\\n  assertTrue(pilha.vazia());\\n}"
+        },
+        {
+            "methodName": "testTamanhoMethod",
+            "code": "@Test \\nvoid testTamanhoMethod() {\\n  Pilha pilha = new Pilha();\\n  assertEquals(0, pilha.tamanho());\\n}"
+        }
+    ]
+}

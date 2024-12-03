@@ -1,0 +1,29 @@
+{
+    "className": "Pilha",
+    "testMethods": [
+        {
+            "methodName": "testPilhaEmptyArray",
+            "code": "@Test\nvoid testPilhaEmptyArray(){\n    Pilha pilha = new Pilha();\n    assertEquals(0, pilha.tamanho());\n}\n"
+        },
+        {
+            "methodName": "testPilhaOneElementArray",
+            "code": "@Test\nvoid testPilhaOneElementArray(){\n    Pilha pilha = new Pilha();\n    pilha.empilha(\"item\");\n    assertEquals(1, pilha.tamanho());\n}\n"
+        },
+        {
+            "methodName": "testPilhaMultipleElementsArray",
+            "code": "@Test\nvoid testPilhaMultipleElementsArray(){\n    Pilha pilha = new Pilha();\n    pilha.empilha(\"item1\");\n    pilha.empilha(\"item2\");\n    pilha.empilha(\"item3\");\n    assertEquals(3, pilha.tamanho());\n}\n"
+        },
+        {
+            "methodName": "testPilhaDesempilha",
+            "code": "@Test\nvoid testPilhaDesempilha(){\n    Pilha pilha = new Pilha();\n    pilha.empilha(\"item\");\n    assertEquals(\"item\", pilha.desempilha());\n}\n"
+        },
+        {
+            "methodName": "testPilhaDesempilhaEmptyArray",
+            "code": "@Test\nvoid testPilhaDesempilhaEmptyArray(){\n    Pilha pilha = new Pilha();\n    try {\n        pilha.desempilha();\n        fail(\"Expected Exception\");\n    } catch (Exception e) {}\n}\n"
+        },
+        {
+            "methodName": "testPilhaVazia",
+            "code": "@Test\nvoid testPilhaVazia(){\n    Pilha pilha = new Pilha();\n    assertTrue(pilha.vazia());\n}\n"
+        }
+    ]
+}

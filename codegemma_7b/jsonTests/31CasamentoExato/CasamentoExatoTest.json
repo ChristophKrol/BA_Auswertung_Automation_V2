@@ -1,0 +1,32 @@
+{
+    "className": "CasamentoExato",
+    "testMethods": [
+        {
+            "methodName": "testForcaBrutaWithEmptyText",
+            "code": "@Test\nvoid testForcaBrutaWithEmptyText() {\n assertEquals(0",
+            "CasamentoExato.forcaBruta(": 0
+        },
+        {
+            "methodName": "testForcaBrutaWithEmptyPattern",
+            "code": "@Test\nvoid testForcaBrutaWithEmptyPattern() {\n assertEquals(0",
+            "CasamentoExato.forcaBruta(": ""
+        },
+        {
+            "methodName": "testForcaBrutaWithMatchingTextAndPattern",
+            "code": "@Test\nvoid testForcaBrutaWithMatchingTextAndPattern() {\n assertEquals(0",
+            "CasamentoExato.forcaBruta(": "",
+            "T": 1
+        },
+        {
+            "methodName": "testForcaBrutaWithNonMatchingTextAndPattern",
+            "code": "@Test\nvoid testForcaBrutaWithNonMatchingTextAndPattern() {\n assertEquals(0",
+            "CasamentoExato.forcaBruta(": "",
+            "P": 1
+        },
+        {
+            "methodName": "testShiftAndExatoWithEmptyText",
+            "code": "@Test\nvoid testShiftAndExatoWithEmptyText() {\n assertEquals(0",
+            "CasamentoExato.shiftAndExato(": 0
+        }
+    ]
+}

@@ -1,0 +1,37 @@
+{
+    "className": "Pilha",
+    "testMethods": [
+        {
+            "methodName": "testEmpilhaDesempilhaComPilhaVazia",
+            "code": "@Test\nvoid testEmpilhaDesempilhaComPilhaVazia() throws Exception {\n    Pilha pilha = new Pilha();\n    pilha.empilha(\"item\");\n    assertEquals(\"item\", pilha.desempilha());\n    assertTrue(pilha.vazia());\n}"
+        },
+        {
+            "methodName": "testEmpilhaDesempilhaComPilhaComUmElemento",
+            "code": "@Test\nvoid testEmpilhaDesempilhaComPilhaComUmElemento() throws Exception {\n    Pilha pilha = new Pilha();\n    pilha.empilha(\"item1\");\n    assertEquals(\"item1\", pilha.desempilha());\n    assertTrue(pilha.vazia());\n}"
+        },
+        {
+            "methodName": "testEmpilhaDesempilhaComPilhaComVariosElementos",
+            "code": "@Test\nvoid testEmpilhaDesempilhaComPilhaComVariosElementos() throws Exception {\n    Pilha pilha = new Pilha();\n    pilha.empilha(\"item1\");\n    pilha.empilha(\"item2\");\n    assertEquals(\"item2\", pilha.desempilha());\n    assertEquals(\"item1\", pilha.desempilha());\n    assertTrue(pilha.vazia());\n}"
+        },
+        {
+            "methodName": "testEmpilhaComPilhaCheia",
+            "code": "@Test\nvoid testEmpilhaComPilhaCheia() throws Exception {\n    Pilha pilha = new Pilha();\n    for (int i = 0; i < Integer.MAX_VALUE; i++) {\n      pilha.empilha(i);\n    }\n    try {\n      pilha.empilha(Integer.MAX_VALUE);\n      fail(\"Deveria lan\u00e7ar uma exce\u00e7\u00e3o\");\n    } catch (Exception e) {\n      // Ignorar\n    }\n}"
+        },
+        {
+            "methodName": "testDesempilhaComPilhaVazia",
+            "code": "@Test\nvoid testDesempilhaComPilhaVazia() throws Exception {\n    Pilha pilha = new Pilha();\n    try {\n      pilha.desempilha();\n      fail(\"Deveria lan\u00e7ar uma exce\u00e7\u00e3o\");\n    } catch (Exception e) {\n      // Ignorar\n    }\n}"
+        },
+        {
+            "methodName": "testTamanhoComPilhaVazia",
+            "code": "@Test\nvoid testTamanhoComPilhaVazia() {\n    Pilha pilha = new Pilha();\n    assertEquals(0, pilha.tamanho());\n}"
+        },
+        {
+            "methodName": "testTamanhoComPilhaComUmElemento",
+            "code": "@Test\nvoid testTamanhoComPilhaComUmElemento() {\n    Pilha pilha = new Pilha();\n    pilha.empilha(\"item\");\n    assertEquals(1, pilha.tamanho());\n}"
+        },
+        {
+            "methodName": "testTamanhoComPilhaComVariosElementos",
+            "code": "@Test\nvoid testTamanhoComPilhaComVariosElementos() {\n    Pilha pilha = new Pilha();\n    pilha.empilha(\"item1\");\n    pilha.empilha(\"item2\");\n    assertEquals(2, pilha.tamanho());\n}"
+        }
+    ]
+}

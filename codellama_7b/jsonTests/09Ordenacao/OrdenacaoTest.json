@@ -1,0 +1,17 @@
+{
+    "className": "Ordenacao",
+    "testMethods": [
+        {
+            "methodName": "testMergeWithEmptyArrays",
+            "code": "@Test \\nvoid testMergeWithEmptyArrays(){\\n assertNull(Ordenacao.merge(new int[0], 0, 0));\\n}"
+        },
+        {
+            "methodName": "testMergeWithOneElementArrays",
+            "code": "@Test \\nvoid testMergeWithOneElementArrays(){\\n assertEquals(1, Ordenacao.merge(new int[]{1}, 0, 1));\\n}"
+        },
+        {
+            "methodName": "testMergeWithMultipleElementsArrays",
+            "code": "@Test \\nvoid testMergeWithMultipleElementsArrays(){\\n assertEquals(3, Ordenacao.merge(new int[]{1, 2, 3}, 0, 2));\\n}"
+        }
+    ]
+}

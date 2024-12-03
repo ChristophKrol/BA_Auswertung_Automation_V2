@@ -1,0 +1,25 @@
+{
+    "className": "MaxMin2",
+    "testMethods": [
+        {
+            "methodName": "testMaxMin2WithEmptyArray",
+            "code": "@Test\nvoid testMaxMin2WithEmptyArray() {\n assertThrows(IllegalArgumentException.class, () -> MaxMin2.maxMin2(new int[0], 0));\n}"
+        },
+        {
+            "methodName": "testMaxMin2WithOneElementArray",
+            "code": "@Test\nvoid testMaxMin2WithOneElementArray() {\n int[] input = {5};\n int[] expected = {5, 5};\n assertEquals(expected, MaxMin2.maxMin2(input, 1));\n}"
+        },
+        {
+            "methodName": "testMaxMin2WithMultipleElementsArray",
+            "code": "@Test\nvoid testMaxMin2WithMultipleElementsArray() {\n int[] input = {1, 2, 3, 4, 5};\n int[] expected = {5, 1};\n assertEquals(expected, MaxMin2.maxMin2(input, 5));\n}"
+        },
+        {
+            "methodName": "testMaxMin2WithNegativeValues",
+            "code": "@Test\nvoid testMaxMin2WithNegativeValues() {\n int[] input = {-5, -2, -3, -4, -1};\n int[] expected = {-1, -5};\n assertEquals(expected, MaxMin2.maxMin2(input, 5));\n}"
+        },
+        {
+            "methodName": "testMaxMin2WithBoundaryValues",
+            "code": "@Test\nvoid testMaxMin2WithBoundaryValues() {\n int[] input = {Integer.MIN_VALUE, Integer.MAX_VALUE};\n int[] expected = {Integer.MAX_VALUE, Integer.MIN_VALUE};\n assertEquals(expected, MaxMin2.maxMin2(input, 2));\n}"
+        }
+    ]
+}

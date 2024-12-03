@@ -1,0 +1,21 @@
+{
+    "className": "Lista",
+    "testMethods": [
+        {
+            "methodName": "testInsereWithFullList",
+            "code": "@Test \\nvoid testInsereWithFullList() throws Exception {\\n  Lista list = new Lista();\\n  for (int i=0; i<1000; i++) { list.insere(new Object()); }\\n  assertThrows(Exception.class, () -> list.insere(new Object()));\\n}"
+        },
+        {
+            "methodName": "testInsereWithEmptyList",
+            "code": "@Test \\nvoid testInsereWithEmptyList() throws Exception {\\n  Lista list = new Lista();\\n  Object obj = new Object();\\n  list.insere(obj);\\n  assertFalse(list.vazia());\\n}"
+        },
+        {
+            "methodName": "testVaziaWithEmptyList",
+            "code": "@Test \\nvoid testVaziaWithEmptyList() {\\n  Lista list = new Lista();\\n  assertTrue(list.vazia());\\n}"
+        },
+        {
+            "methodName": "testVaziaWithNonEmptyList",
+            "code": "@Test \\nvoid testVaziaWithNonEmptyList() throws Exception {\\n  Lista list = new Lista();\\n  list.insere(new Object());\\n  assertFalse(list.vazia());\\n}"
+        }
+    ]
+}

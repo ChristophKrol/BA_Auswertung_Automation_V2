@@ -1,0 +1,25 @@
+{
+    "className": "Fibonacci",
+    "testMethods": [
+        {
+            "methodName": "testFibIterWithNegativeInput",
+            "code": "@Test\nvoid testFibIterWithNegativeInput() {\n assertEquals(0, Fibonacci.fibIter(-5));\n}"
+        },
+        {
+            "methodName": "testFibIterWithZeroInput",
+            "code": "@Test\nvoid testFibIterWithZeroInput() {\n assertEquals(0, Fibonacci.fibIter(0));\n}"
+        },
+        {
+            "methodName": "testFibIterWithPositiveInput",
+            "code": "@Test\nvoid testFibIterWithPositiveInput() {\n assertEquals(8, Fibonacci.fibIter(8));\n}"
+        },
+        {
+            "methodName": "testFibIterWithBoundaryInput",
+            "code": "@Test\nvoid testFibIterWithBoundaryInput() {\n assertEquals(Integer.MAX_VALUE, Fibonacci.fibIter(Integer.MAX_VALUE));\n}"
+        },
+        {
+            "methodName": "testFibIterWithExceptionHandling",
+            "code": "@Test\nvoid testFibIterWithExceptionHandling() {\n assertThrows(RuntimeException.class, () -> Fibonacci.fibIter(Integer.MAX_VALUE + 1));\n}"
+        }
+    ]
+}

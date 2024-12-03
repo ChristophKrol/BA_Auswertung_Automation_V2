@@ -1,0 +1,21 @@
+{
+    "className": "CasamentoExato",
+    "testMethods": [
+        {
+            "methodName": "forcaBrutaTest",
+            "code": "@Test \nvoid forcaBrutaTest(){\\n assertEquals(expected, CasamentoExato.forcaBruta(T, n, P, m));\\n}"
+        },
+        {
+            "methodName": "shiftAndExatoTest",
+            "code": "@Test \nvoid shiftAndExatoTest(){\\n assertEquals(expected, CasamentoExato.shiftAndExato(T, n, P, m));\\n}"
+        },
+        {
+            "methodName": "bmhTest",
+            "code": "@Test \nvoid bmhTest(){\\n assertEquals(expected, CasamentoExato.bmh(T, n, P, m));\\n}"
+        },
+        {
+            "methodName": "bmhsTest",
+            "code": "@Test \nvoid bmhsTest(){\\n assertEquals(expected, CasamentoExato.bmhs(T, n, P, m));\\n}"
+        }
+    ]
+}

@@ -1,0 +1,33 @@
+{
+    "className": "MaxMin3",
+    "testMethods": [
+        {
+            "methodName": "testMaxMin3WithOddLengthArray",
+            "code": "@Test\nvoid testMaxMin3WithOddLengthArray() {\n    int[] v = {1, 2, 3, 4, 5};\n    int[] expected = {5, 1};\n    int[] actual = MaxMin3.maxMin3(v, v.length);\n    assertArrayEquals(expected, actual);\n}"
+        },
+        {
+            "methodName": "testMaxMin3WithEvenLengthArray",
+            "code": "@Test\nvoid testMaxMin3WithEvenLengthArray() {\n    int[] v = {1, 2, 3, 4};\n    int[] expected = {4, 1};\n    int[] actual = MaxMin3.maxMin3(v, v.length);\n    assertArrayEquals(expected, actual);\n}"
+        },
+        {
+            "methodName": "testMaxMin3WithEmptyArray",
+            "code": "@Test\nvoid testMaxMin3WithEmptyArray() {\n    int[] v = {};\n    int[] expected = null;\n    int[] actual = MaxMin3.maxMin3(v, v.length);\n    assertNull(actual);\n}"
+        },
+        {
+            "methodName": "testMaxMin3WithNullArray",
+            "code": "@Test\nvoid testMaxMin3WithNullArray() {\n    int[] v = null;\n    int[] expected = null;\n    int[] actual = MaxMin3.maxMin3(v, 0);\n    assertNull(actual);\n}"
+        },
+        {
+            "methodName": "testMaxMin3WithNegativeValues",
+            "code": "@Test\nvoid testMaxMin3WithNegativeValues() {\n    int[] v = {-1, -2, -3, -4};\n    int[] expected = {-1, -4};\n    int[] actual = MaxMin3.maxMin3(v, v.length);\n    assertArrayEquals(expected, actual);\n}"
+        },
+        {
+            "methodName": "testMaxMin3WithDuplicateValues",
+            "code": "@Test\nvoid testMaxMin3WithDuplicateValues() {\n    int[] v = {1, 2, 2, 4};\n    int[] expected = {4, 1};\n    int[] actual = MaxMin3.maxMin3(v, v.length);\n    assertArrayEquals(expected, actual);\n}"
+        },
+        {
+            "methodName": "testMaxMin3WithThrowsException",
+            "code": "@Test\nvoid testMaxMin3WithThrowsException() {\n    int[] v = {1, 2, 3};\n    assertThrows(IndexOutOfBoundsException.class, () -> MaxMin3.maxMin3(v, v.length + 1));\n}"
+        }
+    ]
+}

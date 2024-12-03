@@ -1,0 +1,37 @@
+{
+    "className": "Tabela",
+    "testMethods": [
+        {
+            "methodName": "testPesquisaWithEmptyArray",
+            "code": "@Test\nvoid testPesquisaWithEmptyArray() {\n assertEquals(-1, new Tabela().pesquisa(item));\n}"
+        },
+        {
+            "methodName": "testPesquisaWithOneElementArray",
+            "code": "@Test\nvoid testPesquisaWithOneElementArray() {\n assertEquals(1, new Tabela(new Item[]{item}, 1).pesquisa(item));\n}"
+        },
+        {
+            "methodName": "testPesquisaWithMultipleElementsArray",
+            "code": "@Test\nvoid testPesquisaWithMultipleElementsArray() {\n Tabela t = new Tabela(new Item[]{item1, item2, item3}, 3);\n assertEquals(2, t.pesquisa(item3));\n}"
+        },
+        {
+            "methodName": "testPesquisaWithNonExistentElement",
+            "code": "@Test\nvoid testPesquisaWithNonExistentElement() {\n Tabela t = new Tabela(new Item[]{item1, item2, item3}, 3);\n assertEquals(-1, t.pesquisa(item4));\n}"
+        },
+        {
+            "methodName": "testPesquisaWithDuplicateElements",
+            "code": "@Test\nvoid testPesquisaWithDuplicateElements() {\n Tabela t = new Tabela(new Item[]{item1, item2, item2}, 3);\n assertEquals(2, t.pesquisa(item2));\n}"
+        },
+        {
+            "methodName": "testPermutWithEmptyArray",
+            "code": "@Test\nvoid testPermutWithEmptyArray() {\n Tabela t = new Tabela();\n PermutacaoRandomica.permut(t.v, 0);\n assertTrue(true);\n}"
+        },
+        {
+            "methodName": "testPermutWithOneElementArray",
+            "code": "@Test\nvoid testPermutWithOneElementArray() {\n Tabela t = new Tabela(new Item[]{item}, 1);\n PermutacaoRandomica.permut(t.v, 1);\n assertTrue(true);\n}"
+        },
+        {
+            "methodName": "testPermutWithMultipleElementsArray",
+            "code": "@Test\nvoid testPermutWithMultipleElementsArray() {\n Tabela t = new Tabela(new Item[]{item1, item2, item3}, 3);\n PermutacaoRandomica.permut(t.v, 3);\n assertTrue(true);\n}"
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "className": "MaxMin1",
+    "testMethods": [
+        {
+            "methodName": "testMaxMinWithEmptyArray",
+            "code": "@Test \nvoid testMaxMinWithEmptyArray(){\n assertNull(MaxMin1.maxMin1(new int[0], 0));\n}"
+        },
+        {
+            "methodName": "testMaxMinWithOneElementArray",
+            "code": "@Test \nvoid testMaxMinWithOneElementArray(){\n assertEquals(item, MaxMin1.maxMin1(new int[]{item}, 1));\n}"
+        },
+        {
+            "methodName": "testMaxMinWithMultipleElementsArray",
+            "code": "@Test \nvoid testMaxMinWithMultipleElementsArray(){\n assertEquals(item3, MaxMin1.maxMin1(new int[]{item1, item2, item3}, 3));\n}"
+        }
+    ]
+}

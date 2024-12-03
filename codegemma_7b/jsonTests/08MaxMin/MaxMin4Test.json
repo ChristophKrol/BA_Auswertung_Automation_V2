@@ -1,0 +1,33 @@
+{
+    "className": "MaxMin4",
+    "testMethods": [
+        {
+            "methodName": "testMaxMin4WithEmptyArray",
+            "code": "@Test\nvoid testMaxMin4WithEmptyArray() {\n assertThrows(IllegalArgumentException.class, () -> MaxMin4.maxMin4(new int[0], 0, 0));\n}"
+        },
+        {
+            "methodName": "testMaxMin4WithSingleElementArray",
+            "code": "@Test\nvoid testMaxMin4WithSingleElementArray() {\n int[] v = {1};\n int[] expected = {1, 1};\n assertEquals(expected, MaxMin4.maxMin4(v, 0, 0));\n}"
+        },
+        {
+            "methodName": "testMaxMin4WithTwoElementsArray",
+            "code": "@Test\nvoid testMaxMin4WithTwoElementsArray() {\n int[] v = {2, 1};\n int[] expected = {2, 1};\n assertEquals(expected, MaxMin4.maxMin4(v, 0, 1));\n}"
+        },
+        {
+            "methodName": "testMaxMin4WithMultipleElementsArray",
+            "code": "@Test\nvoid testMaxMin4WithMultipleElementsArray() {\n int[] v = {1, 2, 3, 4};\n int[] expected = {4, 1};\n assertEquals(expected, MaxMin4.maxMin4(v, 0, 3));\n}"
+        },
+        {
+            "methodName": "testMaxMin4WithBoundaryValues",
+            "code": "@Test\nvoid testMaxMin4WithBoundaryValues() {\n int[] v = {-1, 0, 1};\n int[] expected = {1, -1};\n assertEquals(expected, MaxMin4.maxMin4(v, 0, 2));\n}"
+        },
+        {
+            "methodName": "testMaxMin4WithNegativeValues",
+            "code": "@Test\nvoid testMaxMin4WithNegativeValues() {\n int[] v = {-2, -1, 0};\n int[] expected = {0, -2};\n assertEquals(expected, MaxMin4.maxMin4(v, 0, 2));\n}"
+        },
+        {
+            "methodName": "testMaxMin4WithPositiveValues",
+            "code": "@Test\nvoid testMaxMin4WithPositiveValues() {\n int[] v = {1, 2, 3};\n int[] expected = {3, 1};\n assertEquals(expected, MaxMin4.maxMin4(v, 0, 2));\n}"
+        }
+    ]
+}

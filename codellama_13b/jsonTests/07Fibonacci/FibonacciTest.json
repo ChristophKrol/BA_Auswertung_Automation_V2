@@ -1,0 +1,17 @@
+{
+    "className": "Fibonacci",
+    "testMethods": [
+        {
+            "methodName": "testFibIterWithNegativeValue",
+            "code": "@Test \\nvoid testFibIterWithNegativeValue(){\\n assertEquals(0, Fibonacci.fibIter(-1));\\n}"
+        },
+        {
+            "methodName": "testFibIterWithZeroValue",
+            "code": "@Test \\nvoid testFibIterWithZeroValue(){\\n assertEquals(0, Fibonacci.fibIter(0));\\n}"
+        },
+        {
+            "methodName": "testFibIterWithPositiveValue",
+            "code": "@Test \\nvoid testFibIterWithPositiveValue(){\\n assertEquals(1, Fibonacci.fibIter(1));\\n}"
+        }
+    ]
+}

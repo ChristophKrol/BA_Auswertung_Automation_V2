@@ -1,0 +1,53 @@
+{
+    "className": "CasamentoExato",
+    "testMethods": [
+        {
+            "methodName": "testForcaBrutaWithEmptyTextAndPattern",
+            "code": "@Test \\nvoid testForcaBrutaWithEmptyTextAndPattern() { \\nString T = \"\";\n String P = \"\";\n CasamentoExato.forcaBruta(T, T.length(), P, P.length());\\n }"
+        },
+        {
+            "methodName": "testForcaBrutaWithNonEmptyTextAndEmptyPattern",
+            "code": "@Test \\nvoid testForcaBrutaWithNonEmptyTextAndEmptyPattern() { \\nString T = \"abc\";\n String P = \"\";\n CasamentoExato.forcaBruta(T, T.length(), P, P.length());\\n }"
+        },
+        {
+            "methodName": "testForcaBrutaWithNonEmptyTextAndPattern",
+            "code": "@Test \\nvoid testForcaBrutaWithNonEmptyTextAndPattern() { \\nString T = \"abc\";\n String P = \"abc\";\n CasamentoExato.forcaBruta(T, T.length(), P, P.length());\\n }"
+        },
+        {
+            "methodName": "testShiftAndExatoWithEmptyTextAndPattern",
+            "code": "@Test \\nvoid testShiftAndExatoWithEmptyTextAndPattern() { \\nString T = \"\";\n String P = \"\";\n CasamentoExato.shiftAndExato(T, T.length(), P, P.length());\\n }"
+        },
+        {
+            "methodName": "testShiftAndExatoWithNonEmptyTextAndEmptyPattern",
+            "code": "@Test \\nvoid testShiftAndExatoWithNonEmptyTextAndEmptyPattern() { \\nString T = \"abc\";\n String P = \"\";\n CasamentoExato.shiftAndExato(T, T.length(), P, P.length());\\n }"
+        },
+        {
+            "methodName": "testShiftAndExatoWithNonEmptyTextAndPattern",
+            "code": "@Test \\nvoid testShiftAndExatoWithNonEmptyTextAndPattern() { \\nString T = \"abc\";\n String P = \"abc\";\n CasamentoExato.shiftAndExato(T, T.length(), P, P.length());\\n }"
+        },
+        {
+            "methodName": "testBmhWithEmptyTextAndPattern",
+            "code": "@Test \\nvoid testBmhWithEmptyTextAndPattern() { \\nString T = \"\";\n String P = \"\";\n CasamentoExato.bmh(T, T.length(), P, P.length());\\n }"
+        },
+        {
+            "methodName": "testBmhWithNonEmptyTextAndEmptyPattern",
+            "code": "@Test \\nvoid testBmhWithNonEmptyTextAndEmptyPattern() { \\nString T = \"abc\";\n String P = \"\";\n CasamentoExato.bmh(T, T.length(), P, P.length());\\n }"
+        },
+        {
+            "methodName": "testBmhWithNonEmptyTextAndPattern",
+            "code": "@Test \\nvoid testBmhWithNonEmptyTextAndPattern() { \\nString T = \"abc\";\n String P = \"abc\";\n CasamentoExato.bmh(T, T.length(), P, P.length());\\n }"
+        },
+        {
+            "methodName": "testBmhsWithEmptyTextAndPattern",
+            "code": "@Test \\nvoid testBmhsWithEmptyTextAndPattern() { \\nString T = \"\";\n String P = \"\";\n CasamentoExato.bmhs(T, T.length(), P, P.length());\\n }"
+        },
+        {
+            "methodName": "testBmhsWithNonEmptyTextAndEmptyPattern",
+            "code": "@Test \\nvoid testBmhsWithNonEmptyTextAndEmptyPattern() { \\nString T = \"abc\";\n String P = \"\";\n CasamentoExato.bmhs(T, T.length(), P, P.length());\\n }"
+        },
+        {
+            "methodName": "testBmhsWithNonEmptyTextAndPattern",
+            "code": "@Test \\nvoid testBmhsWithNonEmptyTextAndPattern() { \\nString T = \"abc\";\n String P = \"abc\";\n CasamentoExato.bmhs(T, T.length(), P, P.length());\\n }"
+        }
+    ]
+}

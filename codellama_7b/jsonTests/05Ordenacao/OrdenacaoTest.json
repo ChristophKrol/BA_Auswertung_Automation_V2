@@ -1,0 +1,17 @@
+{
+    "className": "Ordenacao",
+    "testMethods": [
+        {
+            "methodName": "testeOrdenaComArrayVazio",
+            "code": "@Test \\nvoid testeOrdenaComArrayVazio(){\\n assertEquals(0, Ordenacao.ordena(new int[0], 0));\\n}"
+        },
+        {
+            "methodName": "testeOrdenaComArrayUnicoElemento",
+            "code": "@Test \\nvoid testeOrdenaComArrayUnicoElemento(){\\n assertEquals(1, Ordenacao.ordena(new int[]{1}, 1));\\n}"
+        },
+        {
+            "methodName": "testeOrdenaComArrayMultiplosElementos",
+            "code": "@Test \\nvoid testeOrdenaComArrayMultiplosElementos(){\\n assertEquals(3, Ordenacao.ordena(new int[]{1, 2, 3}, 3));\\n}"
+        }
+    ]
+}

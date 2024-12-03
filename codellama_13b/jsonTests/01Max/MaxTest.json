@@ -1,0 +1,17 @@
+{
+    "className": "Max",
+    "testMethods": [
+        {
+            "methodName": "testMaxWithEmptyArray",
+            "code": "@Test \nvoid testMaxWithEmptyArray(){\n assertNull(Max.max(new Item[0], 0));\n}"
+        },
+        {
+            "methodName": "testMaxWithOneElementArray",
+            "code": "@Test \nvoid testMaxWithOneElementArray(){\n assertEquals(item, Max.max(new Item[]{item}, 1));\n}"
+        },
+        {
+            "methodName": "testMaxWithMultipleElementsArray",
+            "code": "@Test \nvoid testMaxWithMultipleElementsArray(){\n assertEquals(item3, Max.max(new Item[]{item1, item2, item3}, 3));\n}"
+        }
+    ]
+}

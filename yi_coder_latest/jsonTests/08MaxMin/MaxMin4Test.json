@@ -1,0 +1,17 @@
+{
+    "className": "MaxMin4",
+    "testMethods": [
+        {
+            "methodName": "testMaxMin4WithEmptyArray",
+            "code": "@Test \\nvoid testMaxMin4WithEmptyArray(){\\n int[] maxMin = MaxMin4.maxMin4(new int[0], 0, 0);\\n assertNull(maxMin);\\n}"
+        },
+        {
+            "methodName": "testMaxMin4WithOneElementArray",
+            "code": "@Test \\nvoid testMaxMin4WithOneElementArray(){\\n int[] maxMin = MaxMin4.maxMin4(new int[]{1}, 0, 0);\\n assertEquals(1, maxMin[0]);\\n assertEquals(1, maxMin[1]);\\n}"
+        },
+        {
+            "methodName": "testMaxMin4WithMultipleElementsArray",
+            "code": "@Test \\nvoid testMaxMin4WithMultipleElementsArray(){\\n int[] maxMin = MaxMin4.maxMin4(new int[]{1, 2, 3}, 0, 2);\\n assertEquals(3, maxMin[0]);\\n assertEquals(1, maxMin[1]);\\n}"
+        }
+    ]
+}

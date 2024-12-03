@@ -1,0 +1,33 @@
+{
+    "className": "Lista",
+    "testMethods": [
+        {
+            "methodName": "testInsereWithFullList",
+            "code": "@Test\nvoid testInsereWithFullList() throws Exception {\n    Lista lista = new Lista();\n    for (int i = 0; i < 1000; i++) lista.insere(new Object());\n    assertThrows(Exception.class, () -> lista.insere(new Object()));\n}"
+        },
+        {
+            "methodName": "testInsereWithEmptyList",
+            "code": "@Test\nvoid testInsereWithEmptyList() throws Exception {\n    Lista lista = new Lista();\n    lista.insere(new Object());\n    assertEquals(1, lista.ultimo);\n}"
+        },
+        {
+            "methodName": "testInsereWithMultipleElements",
+            "code": "@Test\nvoid testInsereWithMultipleElements() throws Exception {\n    Lista lista = new Lista();\n    lista.insere(new Object());\n    lista.insere(new Object());\n    assertEquals(2, lista.ultimo);\n}"
+        },
+        {
+            "methodName": "testVaziaWithEmptyList",
+            "code": "@Test\nvoid testVaziaWithEmptyList() {\n    Lista lista = new Lista();\n    assertTrue(lista.vazia());\n}"
+        },
+        {
+            "methodName": "testVaziaWithNonEmptyList",
+            "code": "@Test\nvoid testVaziaWithNonEmptyList() throws Exception {\n    Lista lista = new Lista();\n    lista.insere(new Object());\n    assertFalse(lista.vazia());\n}"
+        },
+        {
+            "methodName": "testImprimeWithEmptyList",
+            "code": "@Test\nvoid testImprimeWithEmptyList() {\n    Lista lista = new Lista();\n    String output = captureSystemOutput(() -> lista.imprime());\n    assertEquals(\"\", output);\n}"
+        },
+        {
+            "methodName": "testImprimeWithNonEmptyList",
+            "code": "@Test\nvoid testImprimeWithNonEmptyList() throws Exception {\n    Lista lista = new Lista();\n    lista.insere(new Object());\n    String output = captureSystemOutput(() -> lista.imprime());\n    assertEquals(\"Object\", output);\n}"
+        }
+    ]
+}

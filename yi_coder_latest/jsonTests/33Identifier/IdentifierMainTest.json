@@ -1,0 +1,29 @@
+{
+    "className": "IdentifierMain",
+    "testMethods": [
+        {
+            "methodName": "testValidateIdentifierWithNullInput",
+            "code": "@Test \nvoid testValidateIdentifierWithNullInput() {\n assertFalse(new Identifier().validateIdentifier(null));\n}"
+        },
+        {
+            "methodName": "testValidateIdentifierWithEmptyString",
+            "code": "@Test \nvoid testValidateIdentifierWithEmptyString() {\n assertFalse(new Identifier().validateIdentifier(\"\"));\n}"
+        },
+        {
+            "methodName": "testValidateIdentifierWithOneCharacterValidInput",
+            "code": "@Test \nvoid testValidateIdentifierWithOneCharacterValidInput() {\nassertTrue(new Identifier().validateIdentifier(\"a\"));}\n"
+        },
+        {
+            "methodName": "testValidateIdentifierWithOneCharacterInvalidInput",
+            "code": "@Test \nvoid testValidateIdentifierWithOneCharacterInvalidInput() {\n assertFalse(new Identifier().validateIdentifier(\"0\"));}\n"
+        },
+        {
+            "methodName": "testValidateIdentifierWithMultipleCharactersValidInput",
+            "code": "@Test \nvoid testValidateIdentifierWithMultipleCharactersValidInput() {\n assertTrue(new Identifier().validateIdentifier(\"abc\"));}\n"
+        },
+        {
+            "methodName": "testValidateIdentifierWithMultipleCharactersInvalidInput",
+            "code": "@Test \nvoid testValidateIdentifierWithMultipleCharactersInvalidInput() {\n assertFalse(new Identifier().validateIdentifier(\"a0b\"));}\n"
+        }
+    ]
+}

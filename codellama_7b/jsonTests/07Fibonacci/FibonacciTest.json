@@ -1,0 +1,37 @@
+{
+    "className": "Fibonacci",
+    "testMethods": [
+        {
+            "methodName": "testFibIterWithNegativeNumber",
+            "code": "@Test \\nvoid testFibIterWithNegativeNumber(){\\n assertEquals(0, Fibonacci.fibIter(-1));\\n}"
+        },
+        {
+            "methodName": "testFibIterWithZero",
+            "code": "@Test \\nvoid testFibIterWithZero(){\\n assertEquals(0, Fibonacci.fibIter(0));\\n}"
+        },
+        {
+            "methodName": "testFibIterWithOne",
+            "code": "@Test \\nvoid testFibIterWithOne(){\\n assertEquals(1, Fibonacci.fibIter(1));\\n}"
+        },
+        {
+            "methodName": "testFibIterWithTwo",
+            "code": "@Test \\nvoid testFibIterWithTwo(){\\n assertEquals(1, Fibonacci.fibIter(2));\\n}"
+        },
+        {
+            "methodName": "testFibIterWithThree",
+            "code": "@Test \\nvoid testFibIterWithThree(){\\n assertEquals(2, Fibonacci.fibIter(3));\\n}"
+        },
+        {
+            "methodName": "testFibIterWithFour",
+            "code": "@Test \\nvoid testFibIterWithFour(){\\n assertEquals(3, Fibonacci.fibIter(4));\\n}"
+        },
+        {
+            "methodName": "testFibIterWithFive",
+            "code": "@Test \\nvoid testFibIterWithFive(){\\n assertEquals(5, Fibonacci.fibIter(5));\\n}"
+        },
+        {
+            "methodName": "testFibIterWithSix",
+            "code": "@Test \\nvoid testFibIterWithSix(){\\n assertEquals(8, Fibonacci.fibIter(6));\\n}"
+        }
+    ]
+}
