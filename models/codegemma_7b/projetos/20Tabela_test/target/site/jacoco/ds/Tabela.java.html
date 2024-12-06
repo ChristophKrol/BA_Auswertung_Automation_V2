@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="de"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Tabela.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">20Tabela</a> &gt; <a href="index.source.html" class="el_package">ds</a> &gt; <span class="el_source">Tabela.java</span></div><h1>Tabela.java</h1><pre class="source lang-java linenums">package ds;
+
+public class Tabela {
+  public Item registros[];
+  public int n;
+  
+<span class="nc" id="L7">  public Tabela () {</span>
+<span class="nc" id="L8">	final int maxN = 10;</span>
+<span class="nc" id="L9">    this.registros = new Item[maxN+1];</span>
+<span class="nc" id="L10">    this.n = 0;</span>
+<span class="nc" id="L11">  }</span>
+  public int pesquisa (Item reg) {
+<span class="nc" id="L13">    this.registros[0] = reg; // @{\it sentinela}@</span>
+<span class="nc" id="L14">    int i = this.n; </span>
+<span class="nc bnc" id="L15" title="All 2 branches missed.">    while (this.registros[i].compara (reg) != 0) i--;</span>
+<span class="nc" id="L16">    return i;</span>
+  }
+  public void insere (Item reg) throws Exception {
+<span class="nc bnc" id="L19" title="All 2 branches missed.">    if (this.n == (this.registros.length - 1))</span>
+<span class="nc" id="L20">      throw new Exception (&quot;Erro: A tabela esta cheia&quot;);</span>
+<span class="nc" id="L21">    this.registros[++this.n] = reg;</span>
+<span class="nc" id="L22">  }</span>
+  public int binaria (Item chave) { 
+<span class="nc bnc" id="L24" title="All 2 branches missed.">    if (this.n == 0) return 0;</span>
+<span class="nc" id="L25">    int esq = 1, dir = this.n, i;</span>
+    do { 
+<span class="nc" id="L27">      i = (esq + dir) / 2;</span>
+<span class="nc bnc" id="L28" title="All 2 branches missed.">      if (chave.compara (this.registros[i]) &gt; 0) esq = i + 1;</span>
+<span class="nc" id="L29">      else dir = i - 1;</span>
+<span class="nc bnc" id="L30" title="All 4 branches missed.">    } while ((chave.compara (this.registros[i]) != 0) &amp;&amp; (esq &lt;= dir));</span>
+<span class="nc bnc" id="L31" title="All 2 branches missed.">    if (chave.compara (this.registros[i]) == 0) return i;</span>
+<span class="nc" id="L32">    else return 0;</span>
+  }
+ 
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

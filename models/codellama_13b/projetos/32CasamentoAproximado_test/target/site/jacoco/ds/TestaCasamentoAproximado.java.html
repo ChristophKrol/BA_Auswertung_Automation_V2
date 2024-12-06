@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="de"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>TestaCasamentoAproximado.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">32CasamentoAproximado</a> &gt; <a href="index.source.html" class="el_package">ds</a> &gt; <span class="el_source">TestaCasamentoAproximado.java</span></div><h1>TestaCasamentoAproximado.java</h1><pre class="source lang-java linenums">package ds;
+import java.io.*;
+<span class="nc" id="L3">public class TestaCasamentoAproximado {</span>
+<span class="nc" id="L4">  static BufferedReader in = new BufferedReader (</span>
+                             new InputStreamReader (System.in));
+  public static void help () {
+<span class="nc" id="L7">    System.out.println (&quot;Uso: java [NomePrograma] [Padrao] [k] &lt; [Arquivo_com_texto]&quot;);</span>
+<span class="nc" id="L8">    System.exit (0);</span>
+<span class="nc" id="L9">  }</span>
+  public static void main (String[] args) throws Exception {
+<span class="nc bnc" id="L11" title="All 2 branches missed.">    if (args.length != 2) help ();</span>
+<span class="nc" id="L12">    String T = &quot;&quot;;</span>
+<span class="nc" id="L13">    String linha = &quot;&quot;;</span>
+<span class="nc bnc" id="L14" title="All 2 branches missed.">    while ((linha = in.readLine()) != null) T = T + linha + &quot;\n&quot;;</span>
+<span class="nc" id="L15">    String P = args[0];</span>
+<span class="nc" id="L16">    int k = Integer.parseInt(args[1]);</span>
+<span class="nc" id="L17">    System.out.println (&quot;Shift-And-Aproximado:&quot;);</span>
+<span class="nc" id="L18">    CasamentoAproximado.shiftAndAproximado(T, T.length (), P, P.length (), k);</span>
+<span class="nc" id="L19">  }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

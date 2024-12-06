@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="de"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Fila.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">15Fila</a> &gt; <a href="index.source.html" class="el_package">ds</a> &gt; <span class="el_source">Fila.java</span></div><h1>Fila.java</h1><pre class="source lang-java linenums">package ds;
+public class Fila {
+  public Object item[];
+  public int    frente, tras;
+  // @{\it Opera\c{c}\~oes}@
+<span class="fc" id="L6">  public Fila () { // @{\it Cria uma Fila vazia}@</span>
+<span class="fc" id="L7">    this.item = new Object[1000];</span>
+<span class="fc" id="L8">    this.frente = 0;</span>
+<span class="fc" id="L9">    this.tras = this.frente;</span>
+<span class="fc" id="L10">  }</span>
+  public void enfileira (Object x) throws Exception {
+<span class="pc bpc" id="L12" title="1 of 2 branches missed.">    if ((this.tras + 1) % this.item.length == this.frente)</span>
+<span class="nc" id="L13">      throw new Exception (&quot;Erro: A fila esta cheia&quot;);</span>
+<span class="fc" id="L14">    this.item[this.tras] = x;</span>
+<span class="fc" id="L15">    this.tras = (this.tras + 1) % this.item.length;</span>
+<span class="fc" id="L16">  }</span>
+  public Object desenfileira () throws Exception {
+<span class="pc bpc" id="L18" title="1 of 2 branches missed.">    if (this.vazia ())</span>
+<span class="nc" id="L19">      throw new Exception (&quot;Erro: A fila esta vazia&quot;);</span>
+<span class="fc" id="L20">    Object item = this.item[this.frente];</span>
+<span class="fc" id="L21">    this.frente = (this.frente + 1) % this.item.length;</span>
+<span class="fc" id="L22">    return item;</span>
+  }
+  public boolean vazia () {
+<span class="fc bfc" id="L25" title="All 2 branches covered.">    return (this.frente == this.tras);</span>
+  }
+  public void imprime () {
+<span class="fc bfc" id="L28" title="All 2 branches covered.">    for (int i = this.frente; i != this.tras; i = (i + 1) % this.item.length)</span>
+<span class="fc" id="L29">      System.out.println(this.item[i].toString ());</span>
+<span class="fc" id="L30">  }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>
