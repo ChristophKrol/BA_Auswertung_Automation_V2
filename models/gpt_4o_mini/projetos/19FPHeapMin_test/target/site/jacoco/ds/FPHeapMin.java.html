@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="de"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>FPHeapMin.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">19FPHeapMin</a> &gt; <a href="index.source.html" class="el_package">ds</a> &gt; <span class="el_source">FPHeapMin.java</span></div><h1>FPHeapMin.java</h1><pre class="source lang-java linenums">package ds;
+
+public class FPHeapMin {
+  private Item v[];
+  private int  n;
+
+<span class="fc" id="L7">  public FPHeapMin (int maxTam) { </span>
+<span class="fc" id="L8">    this.v = new Item[maxTam + 1];</span>
+<span class="fc" id="L9">    this.n = 0;</span>
+<span class="fc" id="L10">  }</span>
+
+<span class="fc" id="L12">  public FPHeapMin (Item v[]) { this.v = v; this.n = this.v.length - 1; }</span>
+
+  public void refaz (int esq, int dir) {
+<span class="nc" id="L15">    int j = esq * 2;</span>
+<span class="nc" id="L16">    Item x = this.v[esq];</span>
+<span class="nc bnc" id="L17" title="All 2 branches missed.">    while (j &lt;= dir) {</span>
+<span class="nc bnc" id="L18" title="All 4 branches missed.">      if ((j &lt; dir) &amp;&amp; (this.v[j].compara (this.v[j + 1]) &gt; 0)) j++;</span>
+<span class="nc bnc" id="L19" title="All 2 branches missed.">      if (x.compara (this.v[j]) &lt;= 0) break;</span>
+<span class="nc" id="L20">      this.v[esq] = this.v[j]; esq = j; j = esq * 2;</span>
+    }
+<span class="nc" id="L22">    this.v[esq] = x;</span>
+<span class="nc" id="L23">  }</span>
+
+  public void constroi () {
+<span class="nc" id="L26">    int esq = n / 2 + 1;</span>
+<span class="nc bnc" id="L27" title="All 2 branches missed.">    while (esq &gt; 1) { esq--; this.refaz (esq, this.n); }</span>
+<span class="nc" id="L28">  }</span>
+
+<span class="fc" id="L30">  public Item min () { return this.v[1]; }</span>
+
+  public Item retiraMin () throws Exception {
+    Item minimo;
+<span class="pc bpc" id="L34" title="1 of 2 branches missed.">    if (this.n &lt; 1) throw new Exception (&quot;Erro: heap vazio&quot;);</span>
+    else {
+<span class="nc" id="L36">      minimo = this.v[1]; this.v[1] = this.v[this.n--];</span>
+<span class="nc" id="L37">      refaz (1, this.n);</span>
+    }
+<span class="nc" id="L39">    return minimo;</span>
+  }
+
+public void diminuiChave (int i, Object chaveNova) throws Exception {
+<span class="fc" id="L43">  Item x = this.v[i];</span>
+<span class="fc bfc" id="L44" title="All 2 branches covered.">  if (chaveNova == null)</span>
+<span class="fc" id="L45">    throw new Exception (&quot;Erro: chaveNova com valor null&quot;);</span>
+<span class="fc" id="L46">  x.alteraChave (chaveNova);</span>
+<span class="pc bpc" id="L47" title="1 of 4 branches missed.">  while ((i &gt; 1) &amp;&amp; (x.compara (this.v[i / 2]) &lt;= 0)) {</span>
+<span class="nc" id="L48">    this.v[i] = this.v[i / 2]; i /= 2;</span>
+  }
+<span class="fc" id="L50">  this.v[i] = x;</span>
+<span class="fc" id="L51">}</span>
+
+public void insere (Item x) throws Exception {
+<span class="fc" id="L54">  this.n++;</span>
+<span class="fc bfc" id="L55" title="All 2 branches covered.">  if (this.n == this.v.length) throw new Exception (&quot;Erro: heap cheio&quot;);</span>
+<span class="fc" id="L56">  Object chaveNova = x.recuperaChave (); this.v[this.n] = x;</span>
+<span class="fc" id="L57">  this.v[this.n].alteraChave (new Integer (Integer.MAX_VALUE)); // @$\infty$@</span>
+<span class="fc" id="L58">  this.diminuiChave (this.n, chaveNova);</span>
+<span class="fc" id="L59">}</span>
+
+  public void imprime () {
+<span class="fc bfc" id="L62" title="All 2 branches covered.">    for (int i = 1; i &lt;= this.n; i++)</span>
+<span class="fc" id="L63">      System.out.print (this.v[i].toString () + &quot; &quot;);</span>
+<span class="fc" id="L64">    System.out.println ();</span>
+<span class="fc" id="L65">  }</span>
+
+  public void copia (Item v[]) {
+<span class="nc bnc" id="L68" title="All 2 branches missed.">    for (int i = 1; i &lt; v.length; i++)</span>
+<span class="nc" id="L69">      this.v[++this.n] = v[i];</span>
+<span class="nc" id="L70">  }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

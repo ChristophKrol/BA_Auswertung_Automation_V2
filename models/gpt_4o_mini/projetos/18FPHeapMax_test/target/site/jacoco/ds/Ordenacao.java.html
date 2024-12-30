@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="de"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Ordenacao.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">18FPHeapMax</a> &gt; <a href="index.source.html" class="el_package">ds</a> &gt; <span class="el_source">Ordenacao.java</span></div><h1>Ordenacao.java</h1><pre class="source lang-java linenums">package ds;
+
+<span class="nc" id="L3">public class Ordenacao {</span>
+  private static class LimiteParticoes { int i; int j; }
+  private static LimiteParticoes particao (Item v[], int esq, int dir) {
+<span class="nc" id="L6">    LimiteParticoes p = new LimiteParticoes ();</span>
+<span class="nc" id="L7">    p.i = esq;  p.j = dir;</span>
+<span class="nc" id="L8">    Item x = v[(p.i + p.j) / 2]; // @{\it obt\'em o pivo x}@</span>
+    do {
+<span class="nc bnc" id="L10" title="All 2 branches missed.">      while (x.compara (v[p.i]) &gt; 0) p.i++;</span>
+<span class="nc bnc" id="L11" title="All 2 branches missed.">      while (x.compara (v[p.j]) &lt; 0) p.j--;</span>
+<span class="nc bnc" id="L12" title="All 2 branches missed.">      if (p.i &lt;= p.j) {</span>
+<span class="nc" id="L13">        Item w = v[p.i]; v[p.i] = v[p.j]; v[p.j] = w;</span>
+<span class="nc" id="L14">        p.i++; p.j--;</span>
+      }
+<span class="nc bnc" id="L16" title="All 2 branches missed.">    } while (p.i &lt;= p.j);</span>
+<span class="nc" id="L17">    return p;</span>
+  }
+  private static void ordena (Item v[], int esq, int dir) {
+<span class="nc" id="L20">    LimiteParticoes p = particao (v, esq, dir);</span>
+<span class="nc bnc" id="L21" title="All 2 branches missed.">    if (esq &lt; p.j) ordena (v, esq, p.j);</span>
+<span class="nc bnc" id="L22" title="All 2 branches missed.">    if (p.i &lt; dir) ordena (v, p.i, dir);</span>
+<span class="nc" id="L23">  }</span>
+  public static void selecao (Item v[], int n) {
+<span class="nc bnc" id="L25" title="All 2 branches missed.">    for (int i = 1; i &lt;= n - 1; i++) {</span>
+<span class="nc" id="L26">      int min = i;</span>
+<span class="nc bnc" id="L27" title="All 2 branches missed.">      for (int j = i + 1; j &lt;= n; j++)</span>
+<span class="nc bnc" id="L28" title="All 2 branches missed.">        if (v[j].compara (v[min]) &lt; 0) min = j;</span>
+<span class="nc" id="L29">      Item x = v[min]; v[min] = v[i]; v[i] = x;</span>
+    }
+<span class="nc" id="L31">  }</span>
+  public static void insercao (Item v[], int n) {
+    int j;
+<span class="nc bnc" id="L34" title="All 2 branches missed.">    for (int i = 2; i &lt;= n; i++) {</span>
+<span class="nc" id="L35">      Item x = v[i]; j = i - 1;</span>
+<span class="nc" id="L36">      v[0] = x; // @{\it sentinela}@</span>
+<span class="nc bnc" id="L37" title="All 2 branches missed.">      while (x.compara (v[j]) &lt; 0) {</span>
+<span class="nc" id="L38">        v[j + 1] = v[j]; j--;</span>
+      }
+<span class="nc" id="L40">      v[j + 1] = x;</span>
+    }
+<span class="nc" id="L42">  }</span>
+
+  public static void ordenaPorInsercaoComBuscaBinaria (Item v[], int n) {
+<span class="nc bnc" id="L45" title="All 2 branches missed.">    for (int i = 2; i &lt;= n; i++) {</span>
+<span class="nc" id="L46">      int meio, ind; Item x = v[i];</span>
+<span class="nc" id="L47">      int esq = 1; int dir = i - 1;</span>
+      do {
+<span class="nc" id="L49">        meio = (esq + dir) / 2;</span>
+<span class="nc" id="L50">        int comparacao = x.compara (v[meio]);</span>
+<span class="nc bnc" id="L51" title="All 2 branches missed.">        if (comparacao == 0) break;</span>
+<span class="nc bnc" id="L52" title="All 2 branches missed.">        if (comparacao &gt; 0) esq = meio + 1;</span>
+<span class="nc" id="L53">        else dir = meio - 1;</span>
+<span class="nc bnc" id="L54" title="All 2 branches missed.">      } while (esq &lt;= dir);</span>
+<span class="nc bnc" id="L55" title="All 2 branches missed.">      if (meio &gt; esq) ind = meio;</span>
+<span class="nc" id="L56">      else ind = esq;</span>
+<span class="nc bnc" id="L57" title="All 2 branches missed.">      for (int j = i; j &gt;= ind + 1; j--) v[j] = v[j - 1];</span>
+<span class="nc" id="L58">      v[ind] = x;</span>
+    }
+<span class="nc" id="L60">  }</span>
+
+  public static void shellsort (Item v[], int n) {
+<span class="nc" id="L63">    int h = 1;</span>
+<span class="nc bnc" id="L64" title="All 2 branches missed.">    do h = h * 3 + 1; while (h &lt; n);</span>
+    do {
+<span class="nc" id="L66">      h /= 3;</span>
+<span class="nc bnc" id="L67" title="All 2 branches missed.">      for (int i = h + 1; i &lt;= n; i++) {</span>
+<span class="nc" id="L68">        Item x = v[i]; int j = i;</span>
+<span class="nc bnc" id="L69" title="All 2 branches missed.">        while (v[j - h].compara (x) &gt; 0) {</span>
+<span class="nc" id="L70">          v[j] = v[j - h]; j -= h;</span>
+<span class="nc bnc" id="L71" title="All 2 branches missed.">          if (j &lt;= h) break;</span>
+        }
+<span class="nc" id="L73">        v[j] = x;</span>
+      }
+<span class="nc bnc" id="L75" title="All 2 branches missed.">    } while (h != 1);</span>
+<span class="nc" id="L76">  }</span>
+
+<span class="nc" id="L78">  public static void quicksort (Item v[], int n) { ordena (v, 1, n); }</span>
+
+  public static void heapsort (Item v[], int n) {
+    // @{\it Usa a classe FPHeapMax do Programa~\ref{prog:fpheap}}@
+<span class="nc" id="L82">    FPHeapMax fpHeap = new FPHeapMax (n);</span>
+<span class="nc" id="L83">    int dir = n;</span>
+<span class="nc" id="L84">    fpHeap.constroi (); // @{\it constroi o heap}@</span>
+<span class="nc bnc" id="L85" title="All 2 branches missed.">    while (dir &gt; 1) { // @{\it ordena o vetor}@</span>
+<span class="nc" id="L86">      Item x = v[1]; v[1] = v[dir]; v[dir] = x;</span>
+<span class="nc" id="L87">      dir--; fpHeap.refaz (1, dir);</span>
+<span class="nc" id="L88">    }</span>
+<span class="nc" id="L89">  }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

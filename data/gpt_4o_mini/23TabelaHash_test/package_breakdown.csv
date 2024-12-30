@@ -1,0 +1,5 @@
+Breakdown by Class
+Name,Line Coverage,Mutation Coverage,Test Strength
+MeuItem.java (./MeuItem.java.html),14%,0%,0%
+PermutacaoRandomica.java (./PermutacaoRandomica.java.html),0%,0%,100%
+TabelaHash.java (./TabelaHash.java.html),95%,66%,69%

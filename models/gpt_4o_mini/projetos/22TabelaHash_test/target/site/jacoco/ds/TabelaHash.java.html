@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="de"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>TabelaHash.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">22TabelaHash</a> &gt; <a href="index.source.html" class="el_package">ds</a> &gt; <span class="el_source">TabelaHash.java</span></div><h1>TabelaHash.java</h1><pre class="source lang-java linenums">package ds;
+
+public class TabelaHash {
+  private static class Celula {
+    String chave;
+    Object item;
+<span class="nc" id="L7">    public Celula (String chave, Object item) {</span>
+<span class="nc" id="L8">      this.chave = chave; this.item = item;</span>
+<span class="nc" id="L9">    }</span>
+    public boolean equals (Object obj) {
+<span class="nc" id="L11">      Celula cel = (Celula)obj;</span>
+<span class="nc" id="L12">      return chave.equals (cel.chave);</span>
+    }
+    public String toString () {
+<span class="nc" id="L15">      return &quot;  &quot; + item.toString ();</span>
+    }
+  }
+  
+  private int M; // @{\it tamanho da tabela}@
+  private Lista tabela[];
+  private int pesos[];
+
+private int[] geraPesos (int n) {
+<span class="nc" id="L24">  int p[] = new int[n];</span>
+<span class="nc" id="L25">  java.util.Random rand = new java.util.Random ();</span>
+<span class="nc bnc" id="L26" title="All 2 branches missed.">  for (int i = 0; i &lt; n; i++) p[i] = rand.nextInt(M) + 1;</span>
+<span class="nc" id="L27">  return p;</span>
+}
+
+  private int h (String chave, int[] pesos) {
+<span class="nc" id="L31">    int soma = 0;</span>
+<span class="nc bnc" id="L32" title="All 2 branches missed.">    for (int i = 0; i &lt; chave.length(); i++) </span>
+<span class="nc" id="L33">      soma = soma + ((int)chave.charAt (i)) * pesos[i]; </span>
+<span class="nc" id="L34">    return soma % this.M;</span>
+  }
+  
+<span class="nc" id="L37">  public TabelaHash () {//modificado para valor de M e maxTamChave fixo = 7</span>
+<span class="nc" id="L38">	int m = 7;</span>
+<span class="nc" id="L39">	int maxTamChave = 7;</span>
+<span class="nc" id="L40">    this.M = m; this.tabela = new Lista[this.M];</span>
+<span class="nc bnc" id="L41" title="All 2 branches missed.">    for (int i = 0; i &lt; this.M; i++) this.tabela[i] = new Lista ();</span>
+<span class="nc" id="L42">    this.pesos = this.geraPesos (maxTamChave);</span>
+<span class="nc" id="L43">  }  </span>
+   
+  public Object pesquisa (String chave) {
+<span class="nc" id="L46">    int i = this.h (chave, this.pesos);</span>
+<span class="nc bnc" id="L47" title="All 2 branches missed.">    if (this.tabela[i].vazia()) return null; // @{\it pesquisa sem sucesso}@</span>
+    else {
+<span class="nc" id="L49">      Celula cel=(Celula)this.tabela[i].pesquisa(new Celula(chave,null));</span>
+<span class="nc bnc" id="L50" title="All 2 branches missed.">      if (cel == null) return null; // @{\it pesquisa sem sucesso}@</span>
+<span class="nc" id="L51">      else return cel.item;</span>
+    }
+  }
+  
+  public void insere (String chave, Object item) {
+<span class="nc bnc" id="L56" title="All 2 branches missed.">    if (this.pesquisa (chave) == null) {</span>
+<span class="nc" id="L57">      int i = this.h (chave, this.pesos);</span>
+<span class="nc" id="L58">      this.tabela[i].insere (new Celula (chave, item));</span>
+<span class="nc" id="L59">    }</span>
+<span class="nc" id="L60">    else System.out.println (&quot;Registro ja esta presente&quot;);    </span>
+<span class="nc" id="L61">  }</span>
+  
+  public void retira (String chave) throws Exception {
+<span class="nc" id="L64">    int i = this.h (chave, this.pesos);</span>
+<span class="nc" id="L65">    Celula cel = (Celula)this.tabela[i].retira (new Celula (chave,null));</span>
+<span class="nc bnc" id="L66" title="All 2 branches missed.">    if (cel == null) System.out.println (&quot;Registro nao esta presente&quot;);    </span>
+<span class="nc" id="L67">  }</span>
+  
+  public void imprime () {
+<span class="nc bnc" id="L70" title="All 2 branches missed.">    for (int i = 0; i &lt; this.M; i++) {</span>
+<span class="nc bnc" id="L71" title="All 2 branches missed.">      if (!this.tabela[i].vazia ()) {</span>
+<span class="nc" id="L72">        System.out.println (&quot;Entrada: &quot; + i); </span>
+<span class="nc" id="L73">        this.tabela[i].imprime ();</span>
+      }
+    }
+<span class="nc" id="L76">  }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

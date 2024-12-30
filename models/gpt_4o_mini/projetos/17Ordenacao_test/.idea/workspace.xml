@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f5524493-2289-49d9-8610-5b047e837de8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../../Zusammenfassung_V2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Zusammenfassung_V2.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codegemma_7b/01Max_test/package_breakdown.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codegemma_7b/01Max_test/package_breakdown.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codegemma_7b/01Max_test/package_summary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codegemma_7b/01Max_test/package_summary.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codegemma_7b/05Ordenacao_test/package_breakdown.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codegemma_7b/05Ordenacao_test/package_breakdown.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codegemma_7b/05Ordenacao_test/package_summary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codegemma_7b/05Ordenacao_test/package_summary.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codegemma_7b/06Fibonacci_test/package_breakdown.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codegemma_7b/06Fibonacci_test/package_breakdown.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codegemma_7b/06Fibonacci_test/package_summary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codegemma_7b/06Fibonacci_test/package_summary.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codegemma_7b/07Fibonacci_test/package_breakdown.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codegemma_7b/07Fibonacci_test/package_breakdown.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codegemma_7b/07Fibonacci_test/package_summary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codegemma_7b/07Fibonacci_test/package_summary.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codegemma_7b/09Ordenacao_test/package_breakdown.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codegemma_7b/09Ordenacao_test/package_breakdown.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codegemma_7b/09Ordenacao_test/package_summary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codegemma_7b/09Ordenacao_test/package_summary.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codegemma_7b/10AvaliaMultMatrizes_test/package_breakdown.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codegemma_7b/10AvaliaMultMatrizes_test/package_breakdown.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codegemma_7b/10AvaliaMultMatrizes_test/package_summary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codegemma_7b/10AvaliaMultMatrizes_test/package_summary.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codegemma_7b/12Lista_test/package_breakdown.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codegemma_7b/12Lista_test/package_breakdown.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codegemma_7b/12Lista_test/package_summary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codegemma_7b/12Lista_test/package_summary.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codegemma_7b/13Pilha_test/package_breakdown.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codegemma_7b/13Pilha_test/package_breakdown.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codegemma_7b/13Pilha_test/package_summary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codegemma_7b/13Pilha_test/package_summary.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codegemma_7b/14Pilha_test/package_breakdown.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codegemma_7b/14Pilha_test/package_breakdown.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codegemma_7b/14Pilha_test/package_summary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codegemma_7b/14Pilha_test/package_summary.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codegemma_7b/15Fila_test/package_breakdown.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codegemma_7b/15Fila_test/package_breakdown.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codegemma_7b/15Fila_test/package_summary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codegemma_7b/15Fila_test/package_summary.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codegemma_7b/16Fila_test/package_breakdown.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codegemma_7b/16Fila_test/package_breakdown.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codegemma_7b/16Fila_test/package_summary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codegemma_7b/16Fila_test/package_summary.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codegemma_7b/20Tabela_test/package_breakdown.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codegemma_7b/20Tabela_test/package_breakdown.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codegemma_7b/20Tabela_test/package_summary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codegemma_7b/20Tabela_test/package_summary.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codegemma_7b/24Grafo_test/package_breakdown.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codegemma_7b/24Grafo_test/package_breakdown.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codegemma_7b/24Grafo_test/package_summary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codegemma_7b/24Grafo_test/package_summary.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codegemma_7b/31CasamentoExato_test/package_breakdown.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codegemma_7b/31CasamentoExato_test/package_breakdown.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codegemma_7b/31CasamentoExato_test/package_summary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codegemma_7b/31CasamentoExato_test/package_summary.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codegemma_7b/32CasamentoAproximado_test/package_breakdown.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codegemma_7b/32CasamentoAproximado_test/package_breakdown.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codegemma_7b/32CasamentoAproximado_test/package_summary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codegemma_7b/32CasamentoAproximado_test/package_summary.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codegemma_7b/33Identifier_test/package_breakdown.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codegemma_7b/33Identifier_test/package_breakdown.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codegemma_7b/33Identifier_test/package_summary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codegemma_7b/33Identifier_test/package_summary.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codellama_13b/01Max_test/package_breakdown.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codellama_13b/01Max_test/package_breakdown.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codellama_13b/01Max_test/package_summary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codellama_13b/01Max_test/package_summary.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codellama_13b/05Ordenacao_test/package_breakdown.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codellama_13b/05Ordenacao_test/package_breakdown.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codellama_13b/05Ordenacao_test/package_summary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codellama_13b/05Ordenacao_test/package_summary.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codellama_13b/06Fibonacci_test/package_breakdown.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codellama_13b/06Fibonacci_test/package_breakdown.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codellama_13b/06Fibonacci_test/package_summary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codellama_13b/06Fibonacci_test/package_summary.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codellama_13b/07Fibonacci_test/package_breakdown.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codellama_13b/07Fibonacci_test/package_breakdown.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codellama_13b/07Fibonacci_test/package_summary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codellama_13b/07Fibonacci_test/package_summary.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codellama_13b/09Ordenacao_test/package_breakdown.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codellama_13b/09Ordenacao_test/package_breakdown.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codellama_13b/09Ordenacao_test/package_summary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codellama_13b/09Ordenacao_test/package_summary.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codellama_13b/12Lista_test/package_breakdown.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codellama_13b/12Lista_test/package_breakdown.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codellama_13b/12Lista_test/package_summary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codellama_13b/12Lista_test/package_summary.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codellama_13b/13Pilha_test/package_breakdown.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codellama_13b/13Pilha_test/package_breakdown.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codellama_13b/13Pilha_test/package_summary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codellama_13b/13Pilha_test/package_summary.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codellama_13b/14Pilha_test/package_breakdown.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codellama_13b/14Pilha_test/package_breakdown.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codellama_13b/14Pilha_test/package_summary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codellama_13b/14Pilha_test/package_summary.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codellama_13b/15Fila_test/package_breakdown.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codellama_13b/15Fila_test/package_breakdown.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codellama_13b/15Fila_test/package_summary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codellama_13b/15Fila_test/package_summary.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codellama_13b/16Fila_test/package_breakdown.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codellama_13b/16Fila_test/package_breakdown.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codellama_13b/16Fila_test/package_summary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codellama_13b/16Fila_test/package_summary.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codellama_13b/24Grafo_test/package_breakdown.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codellama_13b/24Grafo_test/package_breakdown.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codellama_13b/24Grafo_test/package_summary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codellama_13b/24Grafo_test/package_summary.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codellama_13b/31CasamentoExato_test/package_breakdown.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codellama_13b/31CasamentoExato_test/package_breakdown.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codellama_13b/31CasamentoExato_test/package_summary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codellama_13b/31CasamentoExato_test/package_summary.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codellama_13b/32CasamentoAproximado_test/package_breakdown.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codellama_13b/32CasamentoAproximado_test/package_breakdown.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codellama_13b/32CasamentoAproximado_test/package_summary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codellama_13b/32CasamentoAproximado_test/package_summary.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codellama_7b/01Max_test/package_breakdown.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codellama_7b/01Max_test/package_breakdown.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codellama_7b/01Max_test/package_summary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codellama_7b/01Max_test/package_summary.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codellama_7b/05Ordenacao_test/package_breakdown.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codellama_7b/05Ordenacao_test/package_breakdown.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codellama_7b/05Ordenacao_test/package_summary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codellama_7b/05Ordenacao_test/package_summary.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codellama_7b/06Fibonacci_test/package_breakdown.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codellama_7b/06Fibonacci_test/package_breakdown.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codellama_7b/06Fibonacci_test/package_summary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codellama_7b/06Fibonacci_test/package_summary.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codellama_7b/07Fibonacci_test/package_breakdown.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codellama_7b/07Fibonacci_test/package_breakdown.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codellama_7b/07Fibonacci_test/package_summary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codellama_7b/07Fibonacci_test/package_summary.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codellama_7b/09Ordenacao_test/package_breakdown.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codellama_7b/09Ordenacao_test/package_breakdown.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codellama_7b/09Ordenacao_test/package_summary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codellama_7b/09Ordenacao_test/package_summary.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codellama_7b/10AvaliaMultMatrizes_test/package_breakdown.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codellama_7b/10AvaliaMultMatrizes_test/package_breakdown.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codellama_7b/10AvaliaMultMatrizes_test/package_summary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codellama_7b/10AvaliaMultMatrizes_test/package_summary.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codellama_7b/12Lista_test/package_breakdown.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codellama_7b/12Lista_test/package_breakdown.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codellama_7b/12Lista_test/package_summary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codellama_7b/12Lista_test/package_summary.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codellama_7b/13Pilha_test/package_breakdown.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codellama_7b/13Pilha_test/package_breakdown.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codellama_7b/13Pilha_test/package_summary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codellama_7b/13Pilha_test/package_summary.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codellama_7b/14Pilha_test/package_breakdown.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codellama_7b/14Pilha_test/package_breakdown.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codellama_7b/14Pilha_test/package_summary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codellama_7b/14Pilha_test/package_summary.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codellama_7b/15Fila_test/package_breakdown.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codellama_7b/15Fila_test/package_breakdown.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codellama_7b/15Fila_test/package_summary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codellama_7b/15Fila_test/package_summary.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codellama_7b/16Fila_test/package_breakdown.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codellama_7b/16Fila_test/package_breakdown.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codellama_7b/16Fila_test/package_summary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codellama_7b/16Fila_test/package_summary.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codellama_7b/24Grafo_test/package_breakdown.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codellama_7b/24Grafo_test/package_breakdown.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codellama_7b/24Grafo_test/package_summary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codellama_7b/24Grafo_test/package_summary.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codellama_7b/31CasamentoExato_test/package_breakdown.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codellama_7b/31CasamentoExato_test/package_breakdown.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codellama_7b/31CasamentoExato_test/package_summary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codellama_7b/31CasamentoExato_test/package_summary.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codellama_7b/32CasamentoAproximado_test/package_breakdown.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codellama_7b/32CasamentoAproximado_test/package_breakdown.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codellama_7b/32CasamentoAproximado_test/package_summary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codellama_7b/32CasamentoAproximado_test/package_summary.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codellama_7b/33Identifier_test/package_breakdown.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codellama_7b/33Identifier_test/package_breakdown.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/codellama_7b/33Identifier_test/package_summary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/codellama_7b/33Identifier_test/package_summary.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/llama3_latest/01Max_test/package_breakdown.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/llama3_latest/01Max_test/package_breakdown.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/llama3_latest/01Max_test/package_summary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/llama3_latest/01Max_test/package_summary.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/llama3_latest/05Ordenacao_test/package_breakdown.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/llama3_latest/05Ordenacao_test/package_breakdown.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/llama3_latest/05Ordenacao_test/package_summary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/llama3_latest/05Ordenacao_test/package_summary.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/llama3_latest/06Fibonacci_test/package_breakdown.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/llama3_latest/06Fibonacci_test/package_breakdown.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/llama3_latest/06Fibonacci_test/package_summary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/llama3_latest/06Fibonacci_test/package_summary.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/llama3_latest/07Fibonacci_test/package_breakdown.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/llama3_latest/07Fibonacci_test/package_breakdown.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/llama3_latest/07Fibonacci_test/package_summary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/llama3_latest/07Fibonacci_test/package_summary.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/llama3_latest/09Ordenacao_test/package_breakdown.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/llama3_latest/09Ordenacao_test/package_breakdown.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/llama3_latest/09Ordenacao_test/package_summary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/llama3_latest/09Ordenacao_test/package_summary.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/llama3_latest/10AvaliaMultMatrizes_test/package_breakdown.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/llama3_latest/10AvaliaMultMatrizes_test/package_breakdown.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/llama3_latest/10AvaliaMultMatrizes_test/package_summary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/llama3_latest/10AvaliaMultMatrizes_test/package_summary.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/llama3_latest/12Lista_test/package_breakdown.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/llama3_latest/12Lista_test/package_breakdown.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/llama3_latest/12Lista_test/package_summary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/llama3_latest/12Lista_test/package_summary.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/llama3_latest/13Pilha_test/package_breakdown.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/llama3_latest/13Pilha_test/package_breakdown.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/llama3_latest/13Pilha_test/package_summary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/llama3_latest/13Pilha_test/package_summary.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/llama3_latest/14Pilha_test/package_breakdown.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/llama3_latest/14Pilha_test/package_breakdown.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/llama3_latest/14Pilha_test/package_summary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/llama3_latest/14Pilha_test/package_summary.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/llama3_latest/15Fila_test/package_breakdown.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/llama3_latest/15Fila_test/package_breakdown.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/llama3_latest/15Fila_test/package_summary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/llama3_latest/15Fila_test/package_summary.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/llama3_latest/16Fila_test/package_breakdown.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/llama3_latest/16Fila_test/package_breakdown.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/llama3_latest/16Fila_test/package_summary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/llama3_latest/16Fila_test/package_summary.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/llama3_latest/20Tabela_test/package_breakdown.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/llama3_latest/20Tabela_test/package_breakdown.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/llama3_latest/20Tabela_test/package_summary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/llama3_latest/20Tabela_test/package_summary.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/llama3_latest/24Grafo_test/package_breakdown.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/llama3_latest/24Grafo_test/package_breakdown.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/llama3_latest/24Grafo_test/package_summary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/llama3_latest/24Grafo_test/package_summary.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/llama3_latest/31CasamentoExato_test/package_breakdown.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/llama3_latest/31CasamentoExato_test/package_breakdown.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/llama3_latest/31CasamentoExato_test/package_summary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/llama3_latest/31CasamentoExato_test/package_summary.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/llama3_latest/32CasamentoAproximado_test/package_breakdown.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/llama3_latest/32CasamentoAproximado_test/package_breakdown.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/llama3_latest/32CasamentoAproximado_test/package_summary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/llama3_latest/32CasamentoAproximado_test/package_summary.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/llama3_latest/33Identifier_test/package_breakdown.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/llama3_latest/33Identifier_test/package_breakdown.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/llama3_latest/33Identifier_test/package_summary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/llama3_latest/33Identifier_test/package_summary.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/yi_coder_latest/01Max_test/package_breakdown.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/yi_coder_latest/01Max_test/package_breakdown.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/yi_coder_latest/01Max_test/package_summary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/yi_coder_latest/01Max_test/package_summary.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/yi_coder_latest/05Ordenacao_test/package_breakdown.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/yi_coder_latest/05Ordenacao_test/package_breakdown.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/yi_coder_latest/05Ordenacao_test/package_summary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/yi_coder_latest/05Ordenacao_test/package_summary.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/yi_coder_latest/06Fibonacci_test/package_breakdown.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/yi_coder_latest/06Fibonacci_test/package_breakdown.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/yi_coder_latest/06Fibonacci_test/package_summary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/yi_coder_latest/06Fibonacci_test/package_summary.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/yi_coder_latest/07Fibonacci_test/package_breakdown.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/yi_coder_latest/07Fibonacci_test/package_breakdown.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/yi_coder_latest/07Fibonacci_test/package_summary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/yi_coder_latest/07Fibonacci_test/package_summary.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/yi_coder_latest/09Ordenacao_test/package_breakdown.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/yi_coder_latest/09Ordenacao_test/package_breakdown.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/yi_coder_latest/09Ordenacao_test/package_summary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/yi_coder_latest/09Ordenacao_test/package_summary.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/yi_coder_latest/10AvaliaMultMatrizes_test/package_breakdown.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/yi_coder_latest/10AvaliaMultMatrizes_test/package_breakdown.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/yi_coder_latest/10AvaliaMultMatrizes_test/package_summary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/yi_coder_latest/10AvaliaMultMatrizes_test/package_summary.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/yi_coder_latest/12Lista_test/package_breakdown.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/yi_coder_latest/12Lista_test/package_breakdown.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/yi_coder_latest/12Lista_test/package_summary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/yi_coder_latest/12Lista_test/package_summary.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/yi_coder_latest/13Pilha_test/package_breakdown.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/yi_coder_latest/13Pilha_test/package_breakdown.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/yi_coder_latest/13Pilha_test/package_summary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/yi_coder_latest/13Pilha_test/package_summary.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/yi_coder_latest/14Pilha_test/package_breakdown.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/yi_coder_latest/14Pilha_test/package_breakdown.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/yi_coder_latest/14Pilha_test/package_summary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/yi_coder_latest/14Pilha_test/package_summary.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/yi_coder_latest/15Fila_test/package_breakdown.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/yi_coder_latest/15Fila_test/package_breakdown.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/yi_coder_latest/15Fila_test/package_summary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/yi_coder_latest/15Fila_test/package_summary.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/yi_coder_latest/16Fila_test/package_breakdown.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/yi_coder_latest/16Fila_test/package_breakdown.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/yi_coder_latest/16Fila_test/package_summary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/yi_coder_latest/16Fila_test/package_summary.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/yi_coder_latest/24Grafo_test/package_breakdown.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/yi_coder_latest/24Grafo_test/package_breakdown.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/yi_coder_latest/24Grafo_test/package_summary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/yi_coder_latest/24Grafo_test/package_summary.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/yi_coder_latest/31CasamentoExato_test/package_breakdown.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/yi_coder_latest/31CasamentoExato_test/package_breakdown.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../data/yi_coder_latest/31CasamentoExato_test/package_summary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../data/yi_coder_latest/31CasamentoExato_test/package_summary.xlsx" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 3
+}]]></component>
+  <component name="ProjectId" id="2pw0wsyw0IRS6RIpiaXfRo9yOQ0" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Maven.17Ordenacao [clean].executor": "Run",
+    "Maven.17Ordenacao [org.pitest:pitest-maven:1.15.2:mutationCoverage].executor": "Run",
+    "Maven.17Ordenacao [org.pitest:pitest-maven:1.15.2:report].executor": "Run",
+    "Maven.17Ordenacao [test].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/chkro/Desktop/Auswertung_Automation_V2/BA_Auswertung_Automation_V2/models/gpt_4o_mini/projetos/18FPHeapMax_test",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.21565.193" />
+        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-IU-243.21565.193" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f5524493-2289-49d9-8610-5b047e837de8" name="Changes" comment="" />
+      <created>1733662071494</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1733662071494</updated>
+      <workItem from="1733662072606" duration="92000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

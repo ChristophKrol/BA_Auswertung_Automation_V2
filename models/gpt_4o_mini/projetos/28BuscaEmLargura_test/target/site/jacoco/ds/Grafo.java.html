@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="de"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Grafo.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">28BuscaEmLargura</a> &gt; <a href="index.source.html" class="el_package">ds</a> &gt; <span class="el_source">Grafo.java</span></div><h1>Grafo.java</h1><pre class="source lang-java linenums">package ds;
+
+public class Grafo {
+  public static class Aresta {
+    private int v1, v2, peso;
+<span class="fc" id="L6">    public Aresta (int v1, int v2, int peso) {</span>
+<span class="fc" id="L7">      this.v1 = v1; this.v2 = v2; this.peso = peso;</span>
+<span class="fc" id="L8">    }</span>
+<span class="nc" id="L9">    public int peso () { return this.peso; }</span>
+<span class="nc" id="L10">    public int v1 () { return this.v1; }</span>
+<span class="fc" id="L11">    public int v2 () { return this.v2; }</span>
+  }  
+  private static class Celula {
+    int vertice, peso;
+<span class="fc" id="L15">    public Celula (int v, int p) {this.vertice = v; this.peso = p;}</span>
+    public boolean equals (Object obj) {
+<span class="nc" id="L17">      Celula item = (Celula) obj;</span>
+<span class="nc bnc" id="L18" title="All 2 branches missed.">      return (this.vertice == item.vertice);</span>
+    }
+  }  
+  private Lista adj[]; 
+  private int numVertices;
+<span class="fc" id="L23">  public Grafo (int numVertices) {</span>
+<span class="fc" id="L24">    this.adj = new Lista[numVertices]; this.numVertices = numVertices; </span>
+<span class="fc bfc" id="L25" title="All 2 branches covered.">    for (int i = 0; i &lt; this.numVertices; i++) this.adj[i] = new Lista();</span>
+<span class="fc" id="L26">  }  //@\lstcontinue@</span>
+  public void insereAresta (int v1, int v2, int peso) {
+<span class="fc" id="L28">    Celula item = new Celula (v2, peso); </span>
+<span class="fc" id="L29">    this.adj[v1].insere (item); </span>
+<span class="fc" id="L30">  }  </span>
+  public boolean existeAresta (int v1, int v2) {
+<span class="nc" id="L32">    Celula item = new Celula (v2, 0);</span>
+<span class="nc bnc" id="L33" title="All 2 branches missed.">    return (this.adj[v1].pesquisa (item) != null);</span>
+  }
+  public boolean listaAdjVazia (int v) {
+<span class="fc" id="L36">    return this.adj[v].vazia ();</span>
+  }
+  public Aresta primeiroListaAdj (int v) {
+    // @{\it Retorna a primeira aresta que o v\'ertice v participa ou}@
+    // @{\it {\bf NULL} se a lista de adjac\^encia de v for vazia}@ 
+<span class="fc" id="L41">    Celula item = (Celula) this.adj[v].primeiro ();    </span>
+<span class="pc bpc" id="L42" title="1 of 2 branches missed.">    return item != null ? new Aresta (v, item.vertice, item.peso) : null;</span>
+  }
+  public Aresta proxAdj (int v) {
+    // @{\it Retorna a pr\'oxima aresta que o v\'ertice v participa ou}@
+    // @{\it {\bf null} se a lista de adjac\^encia de v estiver no fim}@
+<span class="fc" id="L47">    Celula item = (Celula) this.adj[v].proximo ();    </span>
+<span class="pc bpc" id="L48" title="1 of 2 branches missed.">    return item != null ? new Aresta (v, item.vertice, item.peso) : null;</span>
+  }
+  public Aresta retiraAresta (int v1, int v2) throws Exception {
+<span class="nc" id="L51">    Celula chave = new Celula (v2, 0);</span>
+<span class="nc" id="L52">    Celula item = (Celula) this.adj[v1].retira (chave);</span>
+<span class="nc bnc" id="L53" title="All 2 branches missed.">    return item != null ? new Aresta (v1, v2, item.peso) : null;</span>
+  }
+  public void imprime () {
+<span class="nc bnc" id="L56" title="All 2 branches missed.">    for (int i = 0; i &lt; this.numVertices; i++) { </span>
+<span class="nc" id="L57">      System.out.println (&quot;Vertice &quot; + i + &quot;:&quot;);</span>
+<span class="nc" id="L58">      Celula item = (Celula) this.adj[i].primeiro ();</span>
+<span class="nc bnc" id="L59" title="All 2 branches missed.">      while (item != null) {</span>
+<span class="nc" id="L60">        System.out.println (&quot;  &quot; + item.vertice + &quot; (&quot; +item.peso+ &quot;)&quot;);</span>
+<span class="nc" id="L61">        item = (Celula) this.adj[i].proximo ();</span>
+      }
+    }
+<span class="nc" id="L64">  }</span>
+<span class="fc" id="L65">  public int numVertices () { return this.numVertices; }</span>
+  public Grafo grafoTransposto () {
+<span class="nc" id="L67">    Grafo grafoT = new Grafo (this.numVertices); </span>
+<span class="nc bnc" id="L68" title="All 2 branches missed.">    for (int v = 0; v &lt; this.numVertices; v++)</span>
+<span class="nc bnc" id="L69" title="All 2 branches missed.">      if (!this.listaAdjVazia (v)) {</span>
+<span class="nc" id="L70">        Aresta adj = this.primeiroListaAdj (v);</span>
+<span class="nc bnc" id="L71" title="All 2 branches missed.">        while (adj != null) {</span>
+<span class="nc" id="L72">          grafoT.insereAresta (adj.v2 (), adj.v1 (), adj.peso ());</span>
+<span class="nc" id="L73">          adj = this.proxAdj (v);</span>
+        }
+      }
+<span class="nc" id="L76">    return grafoT;</span>
+  } 
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

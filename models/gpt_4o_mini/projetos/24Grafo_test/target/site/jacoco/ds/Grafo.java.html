@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="de"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Grafo.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">24Grafo</a> &gt; <a href="index.source.html" class="el_package">ds</a> &gt; <span class="el_source">Grafo.java</span></div><h1>Grafo.java</h1><pre class="source lang-java linenums">package ds;
+
+public class Grafo {
+  
+  private int mat[][]; // @{\it pesos do tipo inteiro}@
+  private int numVertices;
+  private int pos[]; // @{\it posi\c{c}\~ao atual ao se percorrer os adjs de um v\'ertice v}@
+
+<span class="fc" id="L9">  public Grafo () {</span>
+<span class="fc" id="L10">	final int  numVertices = 100;</span>
+<span class="fc" id="L11">    this.mat = new int[numVertices][numVertices];</span>
+<span class="fc" id="L12">    this.pos = new int[numVertices]; </span>
+<span class="fc" id="L13">    this.numVertices = numVertices; </span>
+<span class="fc bfc" id="L14" title="All 2 branches covered.">    for (int i = 0; i &lt; this.numVertices; i++) {</span>
+<span class="fc bfc" id="L15" title="All 2 branches covered.">      for (int j = 0; j &lt; this.numVertices; j++) this.mat[i][j] = 0;</span>
+<span class="fc" id="L16">      this.pos[i] = -1; </span>
+    }
+<span class="fc" id="L18">  }</span>
+  
+  public void insereAresta (int v1, int v2, int peso) {
+<span class="fc" id="L21">    this.mat[v1][v2] = peso; </span>
+<span class="fc" id="L22">  }</span>
+  public boolean existeAresta (int v1, int v2) {
+<span class="fc bfc" id="L24" title="All 2 branches covered.">    return (this.mat[v1][v2] &gt; 0);</span>
+  }
+  public boolean listaAdjVazia (int v) {
+<span class="fc bfc" id="L27" title="All 2 branches covered.">    for (int i =0; i &lt; this.numVertices; i++)</span>
+<span class="fc bfc" id="L28" title="All 2 branches covered.">      if (this.mat[v][i] &gt; 0) return false;</span>
+<span class="fc" id="L29">    return true;</span>
+  }
+  public Aresta primeiroListaAdj (int v) {
+<span class="fc" id="L32">    this.pos[v] = -1; return this.proxAdj (v);</span>
+  }
+  public Aresta proxAdj (int v) {
+<span class="fc" id="L35">    this.pos[v] ++;</span>
+<span class="fc bfc" id="L36" title="All 4 branches covered.">    while ((this.pos[v] &lt; this.numVertices) &amp;&amp; </span>
+<span class="fc" id="L37">           (this.mat[v][this.pos[v]] == 0)) this.pos[v]++;</span>
+<span class="fc bfc" id="L38" title="All 2 branches covered.">    if (this.pos[v] == this.numVertices) return null;</span>
+<span class="fc" id="L39">    else return new Aresta (v, this.pos[v], this.mat[v][this.pos[v]]);</span>
+  }
+  public Aresta retiraAresta (int v1, int v2) {
+<span class="fc bfc" id="L42" title="All 2 branches covered.">    if (this.mat[v1][v2] == 0) return null;</span>
+    else {
+<span class="fc" id="L44">      Aresta aresta = new Aresta (v1, v2, this.mat[v1][v2]);</span>
+<span class="fc" id="L45">      this.mat[v1][v2] = 0; return aresta;</span>
+    }
+  }
+  public void imprime () {
+<span class="nc" id="L49">    System.out.print (&quot;   &quot;);</span>
+<span class="nc bnc" id="L50" title="All 2 branches missed.">    for (int i = 0; i &lt; this.numVertices; i++) </span>
+<span class="nc" id="L51">      System.out.print (i + &quot;   &quot;); </span>
+<span class="nc" id="L52">    System.out.println ();</span>
+<span class="nc bnc" id="L53" title="All 2 branches missed.">    for (int i = 0; i &lt; this.numVertices; i++) { </span>
+<span class="nc" id="L54">      System.out.print (i + &quot;  &quot;);</span>
+<span class="nc bnc" id="L55" title="All 2 branches missed.">      for (int j = 0; j &lt; this.numVertices; j++)</span>
+<span class="nc" id="L56">        System.out.print (this.mat[i][j] + &quot;   &quot;);</span>
+<span class="nc" id="L57">      System.out.println ();</span>
+    }
+<span class="nc" id="L59">  }</span>
+
+  public Grafo grafoTransposto () {
+<span class="fc" id="L62">    Grafo grafoT = new Grafo (); </span>
+<span class="fc bfc" id="L63" title="All 2 branches covered.">    for (int v = 0; v &lt; this.numVertices; v++)</span>
+<span class="fc bfc" id="L64" title="All 2 branches covered.">      if (!this.listaAdjVazia (v)) {</span>
+<span class="fc" id="L65">        Aresta adj = this.primeiroListaAdj (v);</span>
+<span class="fc bfc" id="L66" title="All 2 branches covered.">        while (adj != null) {</span>
+<span class="fc" id="L67">          grafoT.insereAresta (adj.v2 (), adj.v1 (), adj.peso ());</span>
+<span class="fc" id="L68">          adj = this.proxAdj (v);</span>
+        }
+      }
+<span class="fc" id="L71">    return grafoT;</span>
+  }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

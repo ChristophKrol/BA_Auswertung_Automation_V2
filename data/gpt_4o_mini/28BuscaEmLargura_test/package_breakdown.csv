@@ -1,0 +1,6 @@
+Breakdown by Class
+Name,Line Coverage,Mutation Coverage,Test Strength
+BuscaEmLargura.java (./BuscaEmLargura.java.html),92%,74%,89%
+Fila.java (./Fila.java.html),96%,71%,71%
+Grafo.java (./Grafo.java.html),43%,32%,90%
+Lista.java (./Lista.java.html),28%,21%,100%

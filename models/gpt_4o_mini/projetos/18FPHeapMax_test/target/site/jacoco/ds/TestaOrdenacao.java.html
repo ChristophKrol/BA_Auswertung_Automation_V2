@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="de"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>TestaOrdenacao.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">18FPHeapMax</a> &gt; <a href="index.source.html" class="el_package">ds</a> &gt; <span class="el_source">TestaOrdenacao.java</span></div><h1>TestaOrdenacao.java</h1><pre class="source lang-java linenums">package ds;
+
+<span class="nc" id="L3">public class TestaOrdenacao {</span>
+  public static void copia (Item fonte[], Item destino[], int n) {
+<span class="nc bnc" id="L5" title="All 2 branches missed.">    for (int i = 1; i &lt;= n; i++)</span>
+<span class="nc" id="L6">      destino[i] = fonte[i];</span>
+<span class="nc" id="L7">  }</span>
+
+  public static void testa (Item v[], int n) {
+<span class="nc bnc" id="L10" title="All 2 branches missed.">    for (int i = 2; i &lt;= n; i++) {</span>
+<span class="nc bnc" id="L11" title="All 2 branches missed.">      if (v[i].compara (v[i - 1]) &lt; 0) {</span>
+<span class="nc" id="L12">        System.out.print (&quot;ERRO: &quot;);</span>
+<span class="nc" id="L13">        imprime (v, n);</span>
+<span class="nc" id="L14">        return;</span>
+      }
+    }
+<span class="nc" id="L17">    System.out.print (&quot;OK: &quot;);</span>
+<span class="nc" id="L18">    imprime (v, n);</span>
+<span class="nc" id="L19">  }</span>
+
+  public static void imprime (Item v[], int n) {
+<span class="nc bnc" id="L22" title="All 2 branches missed.">    for (int i = 1; i &lt;= n; i++)</span>
+<span class="nc" id="L23">      System.out.print (v[i].toString () + &quot; &quot;);</span>
+<span class="nc" id="L24">    System.out.println ();</span>
+<span class="nc" id="L25">  }</span>
+
+  public static void main (String[] args) {
+<span class="nc" id="L28">    int tam = 20;</span>
+<span class="nc" id="L29">    MeuItem a[] = new MeuItem[tam + 1];</span>
+<span class="nc" id="L30">    MeuItem b[] = new MeuItem[tam + 1];</span>
+<span class="nc" id="L31">    int n = 20; /* Tamanho do arranjo a ser ordenado */</span>
+<span class="nc bnc" id="L32" title="All 2 branches missed.">    for (int i = 1; i &lt;= n; i++)</span>
+<span class="nc" id="L33">      a[i] = new MeuItem (i);</span>
+<span class="nc" id="L34">    PermutacaoRandomica.permut (a, n);</span>
+<span class="nc" id="L35">    copia (a, b, n);</span>
+<span class="nc" id="L36">    System.out.print (&quot;Desordenado : &quot;);</span>
+<span class="nc" id="L37">    imprime (a, n);</span>
+<span class="nc" id="L38">    System.out.print (&quot;Selecao   &quot;);</span>
+<span class="nc" id="L39">    Ordenacao.selecao (b, n);</span>
+<span class="nc" id="L40">    testa (b, n);</span>
+<span class="nc" id="L41">    copia (a, b, n);</span>
+<span class="nc" id="L42">    System.out.print (&quot;Insercao  &quot;);</span>
+<span class="nc" id="L43">    Ordenacao.insercao (b, n);</span>
+<span class="nc" id="L44">    testa (b, n);</span>
+<span class="nc" id="L45">    copia (a, b, n);</span>
+<span class="nc" id="L46">    System.out.print (&quot;Shellsort &quot;);</span>
+<span class="nc" id="L47">    Ordenacao.shellsort (b, n);</span>
+<span class="nc" id="L48">    testa (b, n);</span>
+<span class="nc" id="L49">    copia (a, b, n);</span>
+<span class="nc" id="L50">    System.out.print (&quot;Quicksort &quot;);</span>
+<span class="nc" id="L51">    Ordenacao.quicksort (b, n);</span>
+<span class="nc" id="L52">    testa (b, n);</span>
+<span class="nc" id="L53">    copia (a, b, n);</span>
+<span class="nc" id="L54">    System.out.print (&quot;Heapsort  &quot;);</span>
+<span class="nc" id="L55">    Ordenacao.heapsort (b, n);</span>
+<span class="nc" id="L56">    testa (b, n);</span>
+<span class="nc" id="L57">    copia (a, b, n);</span>
+<span class="nc" id="L58">    System.out.print (&quot;BuscaBin  &quot;);</span>
+<span class="nc" id="L59">    Ordenacao.ordenaPorInsercaoComBuscaBinaria (b, n);</span>
+<span class="nc" id="L60">    testa (b, n);</span>
+<span class="nc" id="L61">  }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

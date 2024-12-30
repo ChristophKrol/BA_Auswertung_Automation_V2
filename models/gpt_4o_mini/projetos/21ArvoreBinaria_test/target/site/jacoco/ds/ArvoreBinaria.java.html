@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="de"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ArvoreBinaria.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">21ArvoreBinaria</a> &gt; <a href="index.source.html" class="el_package">ds</a> &gt; <span class="el_source">ArvoreBinaria.java</span></div><h1>ArvoreBinaria.java</h1><pre class="source lang-java linenums">package ds;
+
+public class ArvoreBinaria {
+  private static class No { 
+    Item reg; 
+    No esq, dir; 
+  }
+  private No raiz;
+  private void central (No p) {
+<span class="nc bnc" id="L10" title="All 2 branches missed.">    if (p != null) {</span>
+<span class="nc" id="L11">      central (p.esq);</span>
+<span class="nc" id="L12">      System.out.println (p.reg.toString());</span>
+<span class="nc" id="L13">      central (p.dir);</span>
+    }
+<span class="nc" id="L15">  }</span>
+  private Item pesquisa (Item reg, No p) {//
+<span class="fc bfc" id="L17" title="All 2 branches covered.">    if (p == null) return null; // @{\it Registro n\~ao econtrado}@</span>
+<span class="fc bfc" id="L18" title="All 2 branches covered.">    else if (reg.compara (p.reg) &lt; 0) return pesquisa (reg, p.esq);</span>
+<span class="fc bfc" id="L19" title="All 2 branches covered.">    else if (reg.compara (p.reg) &gt; 0) return pesquisa (reg, p.dir);</span>
+<span class="fc" id="L20">    else return p.reg;</span>
+  }
+  
+  private No insere (Item reg, No p) {//
+<span class="fc bfc" id="L24" title="All 2 branches covered.">    if (p == null) {</span>
+<span class="fc" id="L25">      p = new No (); p.reg = reg; </span>
+<span class="fc" id="L26">      p.esq = null; p.dir = null;</span>
+    }
+<span class="fc bfc" id="L28" title="All 2 branches covered.">    else if (reg.compara (p.reg) &lt; 0) p.esq = insere (reg, p.esq);</span>
+<span class="fc bfc" id="L29" title="All 2 branches covered.">    else if (reg.compara (p.reg) &gt; 0) p.dir = insere (reg, p.dir);</span>
+<span class="fc" id="L30">    else System.out.println (&quot;Erro: Registro ja existente&quot;);</span>
+<span class="fc" id="L31">    return p; </span>
+  }
+  private No antecessor (No q, No r) {
+<span class="pc bpc" id="L34" title="1 of 2 branches missed.">    if (r.dir != null) r.dir = antecessor (q, r.dir);</span>
+<span class="fc" id="L35">    else { q.reg = r.reg; r = r.esq; }</span>
+<span class="fc" id="L36">    return r;</span>
+  }
+  private No retira (Item reg, No p) {//
+<span class="pc bpc" id="L39" title="1 of 2 branches missed.">    if (p == null) System.out.println (&quot;Erro: Registro nao encontrado&quot;);</span>
+<span class="fc bfc" id="L40" title="All 2 branches covered.">    else if (reg.compara (p.reg) &lt; 0) p.esq = retira (reg, p.esq);</span>
+<span class="pc bpc" id="L41" title="1 of 2 branches missed.">    else if (reg.compara (p.reg) &gt; 0) p.dir = retira (reg, p.dir);</span>
+    else {
+<span class="fc bfc" id="L43" title="All 2 branches covered.">      if (p.dir == null) p = p.esq;</span>
+<span class="fc bfc" id="L44" title="All 2 branches covered.">      else if (p.esq == null) p = p.dir;</span>
+<span class="fc" id="L45">      else p.esq = antecessor (p, p.esq); </span>
+    }
+<span class="fc" id="L47">    return p; </span>
+  }
+
+<span class="fc" id="L50">  public ArvoreBinaria () {//</span>
+<span class="fc" id="L51">    this.raiz = null;</span>
+<span class="fc" id="L52">  }</span>
+  
+  public Item pesquisa (Item reg) {
+<span class="fc" id="L55">    return this.pesquisa (reg, this.raiz);</span>
+  }
+
+  public void insere (Item reg) {
+<span class="fc" id="L59">    this.raiz = this.insere (reg, this.raiz);</span>
+<span class="fc" id="L60">  }</span>
+
+  public void retira (Item reg) {
+<span class="fc" id="L63">    this.raiz = this.retira (reg, this.raiz);</span>
+<span class="fc" id="L64">  }</span>
+  
+  // @{\it M\'etodo para testar o funcionamento da classe}@
+  private void testa (No p) { 
+<span class="nc bnc" id="L68" title="All 2 branches missed.">    if (p == null) return;</span>
+<span class="nc bnc" id="L69" title="All 2 branches missed.">    if (p.esq != null) { </span>
+<span class="nc bnc" id="L70" title="All 2 branches missed.">      if (p.reg.compara (p.esq.reg) &lt; 0) { </span>
+<span class="nc" id="L71">        System.out.println (&quot;Erro: Pai &quot; + p.reg.toString() + &quot; menor que filho a esquerda &quot; + p.esq.reg.toString());</span>
+<span class="nc" id="L72">        System.exit(1);</span>
+      }
+    }
+<span class="nc bnc" id="L75" title="All 2 branches missed.">    if (p.dir != null) { </span>
+<span class="nc bnc" id="L76" title="All 2 branches missed.">      if (p.reg.compara (p.dir.reg) &gt; 0 ) { </span>
+<span class="nc" id="L77">        System.out.println (&quot;Erro: Pai &quot; + p.reg.toString() + &quot; maior que filho a direita &quot; + p.dir.reg.toString());</span>
+<span class="nc" id="L78">        System.exit(1);</span>
+      }
+    }
+<span class="nc" id="L81">    testa(p.esq);</span>
+<span class="nc" id="L82">    testa(p.dir);</span>
+<span class="nc" id="L83">  }</span>
+  public void testa () { 
+<span class="nc" id="L85">    this.testa (this.raiz);</span>
+<span class="nc" id="L86">  }</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="de"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>TestaArvoreBinaria.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">21ArvoreBinaria</a> &gt; <a href="index.source.html" class="el_package">ds</a> &gt; <span class="el_source">TestaArvoreBinaria.java</span></div><h1>TestaArvoreBinaria.java</h1><pre class="source lang-java linenums">package ds;
+import java.util.Random;
+
+<span class="nc" id="L4">public class TestaArvoreBinaria {</span>
+  public static void main (String[] args) {
+<span class="nc" id="L6">    ArvoreBinaria dicionario = new ArvoreBinaria ();</span>
+<span class="nc" id="L7">    int max = 10;</span>
+    
+    MeuItem x;
+<span class="nc" id="L10">    int vetor[] = new int[max];</span>
+
+<span class="nc bnc" id="L12" title="All 2 branches missed.">    for (int i = 0; i &lt; max; i++)</span>
+<span class="nc" id="L13">      vetor[i] = i;</span>
+
+    // @{\it Gera uma permuta\c{c}\~ao aleat\'oria de chaves entre 0 e max-1}@
+<span class="nc" id="L16">    PermutacaoRandomica.permut (vetor, max);</span>
+    
+    // @{\it Insere cada chave na \'arvore e testa sua integridade ap\'os cada inser\c{c}\~ao}@
+<span class="nc bnc" id="L19" title="All 2 branches missed.">    for (int i = 0; i &lt; max; i++) { </span>
+<span class="nc" id="L20">      x = new MeuItem (vetor[i]);</span>
+<span class="nc" id="L21">      dicionario.insere (x);</span>
+<span class="nc" id="L22">      System.out.println (&quot;Inseriu chave: &quot; + x.toString());</span>
+<span class="nc" id="L23">      dicionario.testa ();</span>
+    }
+
+    // @{\it Retira uma chave aleatoriamente e realiza v\'arias pesquisas}@
+<span class="nc bnc" id="L27" title="All 2 branches missed.">    for (int i = 0; i &lt; max; i++) {</span>
+<span class="nc" id="L28">        Random rand = new Random ();</span>
+<span class="nc" id="L29">        int k =  rand.nextInt (10);</span>
+<span class="nc" id="L30">        int n = vetor[k];</span>
+<span class="nc" id="L31">        x = new MeuItem (n);</span>
+<span class="nc" id="L32">        dicionario.retira (x);</span>
+<span class="nc" id="L33">        dicionario.testa ();</span>
+<span class="nc" id="L34">        System.out.println (&quot;Retirou chave: &quot; + x.toString());</span>
+<span class="nc bnc" id="L35" title="All 2 branches missed.">        for (int j = 0; j &lt; max; j++) { </span>
+<span class="nc" id="L36">          x = new MeuItem (rand.nextInt (10));</span>
+<span class="nc bnc" id="L37" title="All 2 branches missed.">          if (x.compara (new MeuItem (n)) != 0 ) { </span>
+<span class="nc" id="L38">            System.out.print(&quot;Pesquisando chave: &quot; + x.toString());</span>
+<span class="nc" id="L39">            x = (MeuItem)dicionario.pesquisa (x);</span>
+<span class="nc" id="L40">            System.out.println (&quot; , encontrou:&quot; + x.toString());</span>
+          }
+        }
+<span class="nc" id="L43">      x = new MeuItem (n);</span>
+<span class="nc" id="L44">      dicionario.insere (x);</span>
+<span class="nc" id="L45">      System.out.println (&quot;Inseriu chave: &quot; + x.toString());</span>
+<span class="nc" id="L46">      dicionario.testa ();</span>
+    }
+
+    // @{\it Retira a raiz da \'arvore at\'e que ela fique vazia}@
+<span class="nc bnc" id="L50" title="All 2 branches missed.">    for (int i = 0; i &lt; max; i++) { </span>
+<span class="nc" id="L51">      x = new MeuItem (vetor[i]);</span>
+<span class="nc" id="L52">      dicionario.retira (x);</span>
+<span class="nc" id="L53">      dicionario.testa ();</span>
+<span class="nc" id="L54">      System.out.println (&quot;Retirou chave: &quot; + x.toString());</span>
+    }
+<span class="nc" id="L56">  }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

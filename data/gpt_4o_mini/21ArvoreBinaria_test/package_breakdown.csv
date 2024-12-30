@@ -1,0 +1,7 @@
+Breakdown by Class
+Name,Line Coverage,Mutation Coverage,Test Strength
+ArvoreBinaria.java (./ArvoreBinaria.java.html),60%,49%,85%
+CriaArvore.java (./CriaArvore.java.html),0%,0%,100%
+MeuItem.java (./MeuItem.java.html),36%,60%,100%
+PermutacaoRandomica.java (./PermutacaoRandomica.java.html),0%,0%,100%
+TestaArvoreBinaria.java (./TestaArvoreBinaria.java.html),0%,0%,100%

@@ -1,0 +1,6 @@
+Breakdown by Class
+Name,Line Coverage,Mutation Coverage,Test Strength
+AgmPrim.java (./AgmPrim.java.html),84%,67%,86%
+FPHeapMinIndireto.java (./FPHeapMinIndireto.java.html),79%,34%,39%
+Grafo.java (./Grafo.java.html),50%,32%,82%
+Lista.java (./Lista.java.html),33%,25%,100%

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="de"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>BuscaEmProfundidade.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">27Grafo</a> &gt; <a href="index.source.html" class="el_package">ds</a> &gt; <span class="el_source">BuscaEmProfundidade.java</span></div><h1>BuscaEmProfundidade.java</h1><pre class="source lang-java linenums">package ds;
+
+public class BuscaEmProfundidade {
+  public static final byte branco = 0;
+  public static final byte cinza  = 1;
+  public static final byte preto  = 2;
+  private int d[], t[], antecessor[];
+  private Grafo grafo;
+<span class="fc" id="L9">  public BuscaEmProfundidade (Grafo grafo) {</span>
+<span class="fc" id="L10">    this.grafo = grafo; int n = this.grafo.numVertices();</span>
+<span class="fc" id="L11">    d = new int[n]; t = new int[n]; antecessor = new int[n];</span>
+<span class="fc" id="L12">  }</span>
+  private int visitaDfs (int u, int tempo, int cor[]) {
+<span class="fc" id="L14">    cor[u] = cinza; this.d[u] = ++tempo;</span>
+//    System.out.println (&quot;Visita &quot;+u+&quot; Descoberta:&quot;+this.d[u]+&quot; cinza&quot;);
+<span class="pc bpc" id="L16" title="1 of 2 branches missed.">    if (!this.grafo.listaAdjVazia (u)) {</span>
+<span class="nc" id="L17">      Grafo.Aresta a = this.grafo.primeiroListaAdj (u);</span>
+<span class="nc bnc" id="L18" title="All 2 branches missed.">      while (a != null) {</span>
+<span class="nc" id="L19">        int v = a.v2 ();</span>
+<span class="nc bnc" id="L20" title="All 2 branches missed.">        if (cor[v] == branco) {</span>
+<span class="nc" id="L21">          this.antecessor[v] = u;</span>
+<span class="nc" id="L22">          tempo = this.visitaDfs (v, tempo, cor);</span>
+        }
+<span class="nc" id="L24">        a = this.grafo.proxAdj (u);</span>
+<span class="nc" id="L25">      }</span>
+    }
+<span class="fc" id="L27">    cor[u] = preto; this.t[u] = ++tempo;</span>
+//    System.out.println (&quot;Visita &quot; +u+ &quot; Termino:&quot; +this.t[u]+ &quot; preto&quot;);
+<span class="fc" id="L29">    return tempo;</span>
+  }
+  public void buscaEmProfundidade () {
+<span class="fc" id="L32">    int tempo = 0; int cor[] = new int[this.grafo.numVertices ()]; </span>
+<span class="fc bfc" id="L33" title="All 2 branches covered.">    for (int u = 0; u &lt; grafo.numVertices (); u++) {</span>
+<span class="fc" id="L34">      cor[u] = branco; this.antecessor[u] = -1;</span>
+    }     
+<span class="fc bfc" id="L36" title="All 2 branches covered.">    for (int u = 0; u &lt; grafo.numVertices (); u++)</span>
+<span class="pc bpc" id="L37" title="1 of 2 branches missed.">      if (cor[u] == branco) tempo = this.visitaDfs (u, tempo, cor);</span>
+<span class="fc" id="L38">  }</span>
+  
+  // metodos para verifica�ao durante o teste, ignora-los
+<span class="fc" id="L41">  public int d (int v) { return this.d[v]; }</span>
+<span class="nc" id="L42">  public int t (int v) { return this.t[v]; }</span>
+<span class="nc" id="L43">  public int antecessor (int v) { return this.antecessor[v]; }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

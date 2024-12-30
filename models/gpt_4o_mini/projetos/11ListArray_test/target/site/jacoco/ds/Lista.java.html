@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="de"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Lista.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">11ListArray</a> &gt; <a href="index.source.html" class="el_package">ds</a> &gt; <span class="el_source">Lista.java</span></div><h1>Lista.java</h1><pre class="source lang-java linenums">package ds;
+public class Lista {
+  public Object item[];
+  public int primeiro, ultimo, pos;
+  // @{\it Opera\c{c}\~oes}@
+<span class="fc" id="L6">  public Lista () { // @{\it Cria uma Lista vazia}@</span>
+<span class="fc" id="L7">    this.item = new Object[1000]; this.pos = -1;</span>
+<span class="fc" id="L8">    this.primeiro = 0; this.ultimo = this.primeiro;</span>
+<span class="fc" id="L9">  }</span>
+
+  public void insere (Object x) throws Exception {
+<span class="fc bfc" id="L12" title="All 2 branches covered.">    if (this.ultimo &gt;= this.item.length)</span>
+<span class="fc" id="L13">      throw new Exception (&quot;Erro: A lista esta cheia&quot;);</span>
+<span class="fc" id="L14">    else { this.item[this.ultimo] = x; this.ultimo = this.ultimo + 1; }</span>
+<span class="fc" id="L15">  }</span>
+
+<span class="fc bfc" id="L17" title="All 2 branches covered.">  public boolean vazia () { return (this.primeiro == this.ultimo); }</span>
+
+  public void imprime () {
+<span class="fc bfc" id="L20" title="All 2 branches covered.">    for (int aux = this.primeiro; aux &lt; this.ultimo; aux++)</span>
+<span class="fc" id="L21">      System.out.println (this.item[aux].toString ());</span>
+<span class="fc" id="L22">  }</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

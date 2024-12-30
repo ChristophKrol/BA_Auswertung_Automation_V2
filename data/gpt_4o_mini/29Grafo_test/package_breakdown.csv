@@ -1,0 +1,6 @@
+Breakdown by Class
+Name,Line Coverage,Mutation Coverage,Test Strength
+BuscaEmProfundidade.java (./BuscaEmProfundidade.java.html),92%,43%,50%
+Cfc.java (./Cfc.java.html),0%,0%,100%
+Grafo.java (./Grafo.java.html),43%,18%,50%
+Lista.java (./Lista.java.html),28%,0%,0%

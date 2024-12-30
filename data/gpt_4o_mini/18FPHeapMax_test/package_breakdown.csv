@@ -1,0 +1,8 @@
+Breakdown by Class
+Name,Line Coverage,Mutation Coverage,Test Strength
+FPHeapMax.java (./FPHeapMax.java.html),45%,15%,64%
+MeuItem.java (./MeuItem.java.html),29%,10%,100%
+Ordenacao.java (./Ordenacao.java.html),0%,0%,100%
+PermutacaoRandomica.java (./PermutacaoRandomica.java.html),0%,0%,100%
+TestaFPHeapMax.java (./TestaFPHeapMax.java.html),0%,0%,100%
+TestaOrdenacao.java (./TestaOrdenacao.java.html),0%,0%,100%

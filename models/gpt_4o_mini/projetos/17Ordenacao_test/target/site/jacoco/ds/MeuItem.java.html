@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="de"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>MeuItem.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">17Ordenacao</a> &gt; <a href="index.source.html" class="el_package">ds</a> &gt; <span class="el_source">MeuItem.java</span></div><h1>MeuItem.java</h1><pre class="source lang-java linenums">package ds;
+import java.io.*;
+public class MeuItem implements Item {
+  private int chave;
+  // @{\it outros componentes do registro}@
+
+<span class="nc" id="L7">  public MeuItem (int chave) { this.chave = chave; }</span>
+  
+  public int compara (Item it) {
+<span class="nc" id="L10">    MeuItem item = (MeuItem) it;</span>
+<span class="nc bnc" id="L11" title="All 2 branches missed.">    if (this.chave &lt; item.chave) return -1;</span>
+<span class="nc bnc" id="L12" title="All 2 branches missed.">    else if (this.chave &gt; item.chave) return 1;</span>
+<span class="nc" id="L13">    return 0;</span>
+  }
+  
+  public void alteraChave (Object chave) {
+<span class="nc" id="L17">    Integer ch = (Integer) chave; this.chave = ch.intValue ();</span>
+<span class="nc" id="L18">  }</span>
+  
+<span class="nc" id="L20">  public Object recuperaChave () { return new Integer (this.chave); }</span>
+  
+<span class="nc" id="L22">  public String toString () { return &quot;&quot; + this.chave; }</span>
+  
+  public void gravaArq (RandomAccessFile arq) throws IOException {
+<span class="nc" id="L25">    arq.writeInt (this.chave);</span>
+<span class="nc" id="L26">  }</span>
+  
+  public void leArq (RandomAccessFile arq) throws IOException {
+<span class="nc" id="L29">    this.chave = arq.readInt ();</span>
+<span class="nc" id="L30">  }</span>
+ 
+<span class="nc" id="L32">  public static int tamanho () { return 4; /* @{\it 4 bytes}@ */ }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>
